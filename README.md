@@ -1,6 +1,9 @@
-# TeamProject
+# 트레닌(TraNin)
 조원 : 김혜현, 유수현, 오범수, 오해준
-test1
-test2222
-test33333
-test4444444
+
+## 트레닌(TraNin)이란?
+닌텐도 중고거래 사이트
+
+```bash
+# test code
+```
