@@ -125,3 +125,36 @@ $(".rightQuickMenu > a").on("click", function (e) {
       headerLeftNavBar.style.top = "0px";
     });
 });
+
+
+/*유수현 자바스크립트 시작*/ 
+
+/* 섹션2 */
+const pc = document.querySelector('#pcNotice button');
+const pcSlider =document.querySelector('#PCSliderWrap_sh');
+const mobile = document.querySelector('#mobileNotice button');
+const mSlider = document.querySelector('#MSliderWrap_sh');
+const pcBtn = document.querySelector('#PCBtnWrap_sh');
+const mBtn = document.querySelector('#MBtnWrap_sh');
+
+pc.addEventListener('click', function(){
+  mobile.classList.remove('on')
+  pc.classList.add('on')
+  mSlider.classList.remove('see')
+  pcSlider.classList.add('see')
+  mBtn.classList.remove('see')
+  pcBtn.classList.add('see')
+});
+mobile.addEventListener('click', function(){
+  pc.classList.remove('on')
+  mobile.classList.add('on')
+  pcSlider.classList.remove('see')
+  mSlider.classList.add('see')
+  pcBtn.classList.remove('see')
+  mBtn.classList.add('see')
+});
+
+
+/* 푸터 */
+
+/*유수현 자바스크립트 끝*/ 
