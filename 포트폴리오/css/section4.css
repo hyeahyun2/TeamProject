@@ -1,5 +1,16 @@
 @charset "utf-8";
 
 .page4 {
-  background-color: green;
+  background-color: #d2eefd;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.reviewCategory_sec4 {
+  width: 20%; height: 50%;
+  border: 1px solid #000;
+}
+.reviewPost_sec4 {
+  width: 50%; height: 50%;
+  border: 1px solid #000;
 }

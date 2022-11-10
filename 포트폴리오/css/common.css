@@ -268,7 +268,7 @@ div#headerWrap.enabled ul > li > a {
 .page6,
 .page7 {
   width: 100%;
-  height: 100vh;
+  height: 100vh; 
 }
 .page1 {
   background-color: red;
