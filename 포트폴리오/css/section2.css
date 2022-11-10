@@ -1,34 +1,82 @@
 @charset "utf-8";
 
 .page2Wrap_sh{
+    width: 100%;
+    height: 100%;
 
 }
 .page2{
+    width: 1000px;
+    height: 80wh;
+    border: 1px solid black;
+    margin: 0 auto;
+    position:relative;
 
 }
 #pcNotice{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    position: absolute; 
+    top:80px;
+    left:80px;
 
 }
 #pcNotice p:nth-child(1){
+    font-size: 30px;
+    text-align: center;
+
+}
+#pcNotice p:nth-child(1).on{
+    color:red;
+    border-bottom: 2px solid red;
 
 }
 #pcNotice p:nth-child(2){
+    width: 400px;
+    text-align: center;
+    margin-top: 40px;
     
 }
 #PCBtnWrap_sh{
+    width: 420px;
+    height: 80px;
+    border: 1px solid black;
+    position:absolute;
+    top: 80px;;
+    right: 80px;;
 
 }
 #PCBtnWrap_sh .PCBtn_sh{
+    display: block;
+    margin:0 auto;
+    font-size: 25px;
+   
 
 }
 #PCSliderWrap_sh{
+    width: 420px;
+    height: 420px;
+    border: 1px solid yellow;
+    background-color: yellow;
+    position:absolute;
+    bottom:80px;
+    right:80px;
+    
 
+}
+#PCSliderWrap_sh .see{
+    opacity: 1;
 }
 #PCSliderWrap_sh .PCSlider1_sh{
 
 }
 .PCSlider_sh{
 
+}
+.PCSlider_sh a{
+    display:block;
+    text-indent: -9999px;
 }
 .PCSlider1{
 
@@ -46,21 +94,55 @@
 
 }
 #mobileNotice{
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+    position: absolute; 
+    top:80px;
+    left:280px;
 
 }
 #mobileNotice p{
+    font-size: 30px;
+    text-align: center;
 
 }
+#MBtnWrap_sh{
+    width: 420px;
+    height: 80px;
+    border: 1px solid black;
+    position:absolute;
+    top: 80px;
+    right: 80px;
+
+  
+}
 #MBtnWrap_sh .MBtn_sh{
+    display: block;
+    margin:0 auto;
+    font-size: 25px;
 
 }
 #MSliderWrap_sh{
+    width: 420px;
+    height: 420px;
+    border: 1px solid blue;
+    background-color: blue;
+    position:absolute;
+    bottom: 80px;;
+    right: 80px;
+    opacity:0;
 
 }
 #MSliderWrap_sh .MSlider_sh{
 
 }
 .MSlider_sh{
+
+}
+.MSlider_sh a{
+    display:block;
+    text-indent: -9999px;
 
 }
 .MSlider1{
@@ -73,7 +155,7 @@
 
 }
 .MSlider4{
-    
+
 }
 .MSlider5{
 
