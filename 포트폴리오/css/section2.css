@@ -26,10 +26,11 @@
     margin:0 auto;
     border: 0;
     background-color: white;
+    color:gray;
 
 }
 .on{
-    color:grey;
+    color:black;
 
 }
 #pcNotice p{
@@ -121,6 +122,7 @@
     margin:0 auto;
     border: 0;
     background-color: white;
+    color:gray;
 
 }
 #MBtnWrap_sh{
