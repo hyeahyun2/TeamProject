@@ -2,27 +2,26 @@
 .mainslider {
 }
 .mainslider > #mainsliderBtn {
-  width: 300px;
+  width: 100%;
   position: absolute;
-  left : 65%;
-  transform: translate(20%, -50%);
-  bottom: 20%;
+  display : flex;
+  padding: 0 120px;
+  justify-content:space-between;
+  top : calc(50% - 75px);
   z-index: 10;
-  float: right;
+  opacity: 0.3;
 }
 .mainslider > #mainsliderBtn button {
-  height : 50px;
+  height : 150px;
   width : 50px;
-  margin : 5px;
 	padding: 0;
   border: none;
-  text-indent: -9999px;
 }
 .mainslider > #mainsliderBtn button:nth-child(2){
-  background: black;
+
 }
 .mainslider > #mainsliderBtn button:nth-child(1){
-  background: black;
+
 }
 .page1_slides {
   display: flex;
