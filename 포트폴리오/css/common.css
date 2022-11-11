@@ -12,17 +12,19 @@ body {
 }
 
 #upperSmallNav {
-  position: relative;
-  top: 0;
-  right : 0;
-  max-width: 1390px;
-  height: 28px;
-  margin:0 auto;
+  position: absolute;
+  left: 50%;
+  top:20px;
+  transform: translate(-15%, -50%);
+  width : 100%;
+  max-width : 50%;
+  height : 28px;
+  padding : 8px 0;
+  margin : 35px auto 0 auto;
+  background-color: rgba(255,255,255,0.3);
   box-sizing: content-box;
-  z-index: 99;
-  font-size: 12px;
-  padding-right: 30px;
 }
+
 #upperSmallNav a {
   position: relative;
   color: white;
@@ -193,45 +195,7 @@ div#headerWrap.enabled ul > li > a {
   border-radius: 96px;
   text-align: center;
 }
-.rightQuickMenu ul > li:nth-child(1) > a {
-  display: block;
-  line-height: 35px;
-}
-.rightQuickMenu ul > li:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  top: 100px;
-  left: 10px;
-  width: 80px;
-  height: 1px;
-  background: #9a1b15;
-}
-.rightQuickMenu ul > li:nth-child(1) > a span {
-  font-size: 17px;
-  width: 80px;
-  position: absolute;
-  left: 10px;
-  top: 105px;
-}
-.rightQuickMenu ul > li:nth-child(1) > a::before {
-  content: ".";
-  display: block;
-  position: absolute;
-  font-size: 50px;
-  top: 25px;
-  left: 42px;
-}
-.rightQuickMenu ul > li:nth-child(2) {
-  display: block;
-  width: 96px;
-  height: 96px;
-  background-color: gray;
-  border-radius: 96px;
-  margin-top: 30px;
-  line-height: 45px;
-  font-size: 16px;
-  text-align: center;
-}
+
 .rightQuickMenu > a {
   display: block;
   text-align: center;
@@ -268,7 +232,7 @@ div#headerWrap.enabled ul > li > a {
 .page6,
 .page7 {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
 }
 .page1 {
   background-color: red;
