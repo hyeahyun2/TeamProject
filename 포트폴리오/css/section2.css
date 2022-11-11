@@ -60,8 +60,6 @@
 #PCSliderWrap_sh{
     width: 420px;
     height: 420px;
-    border: 1px solid yellow;
-    background-color: yellow;
     position:absolute;
     bottom:80px;
     right:80px;
@@ -70,11 +68,19 @@
 }
 .see{
     z-index: 9;
+    opacity:1;
+}
+.unsee{
+    opacity:0;
 }
 #PCSliderWrap_sh .PCSlider1_sh{
 
 }
-.PCSlider_sh{
+.PCSlider1_sh{
+
+}
+.PCSlider1_sh img{
+    height: 420px;
 
 }
 .PCSlider_sh a{
@@ -138,8 +144,6 @@
 #MSliderWrap_sh{
     width: 420px;
     height: 420px;
-    border: 1px solid blue;
-    background-color: blue;
     position:absolute;
     bottom: 80px;;
     right: 80px;
@@ -149,6 +153,12 @@
 }
 .MSlider_sh{
 
+    
+
+}
+.MSlider_sh img{
+    height: 420px;
+    
 }
 .MSlider_sh a{
     width: 420px;

@@ -133,10 +133,10 @@ let sec1_state = 1; //움직임제어조건변수
 let sec1_num;
 let sec1_classNum = 0;
 let sec1_nextSlider = ()=> {
-  state = 0;
-  classNum++;
-  if(classNum == 6) {
-    classNum = 0;
+  sec1_state = 0;
+  sec1_classNum++;
+  if(sec1_classNum == 3) {
+    sec1_classNum = 0;
   }
   $('.page1_slides > li:eq(1)')
           .addClass('active')
@@ -144,14 +144,14 @@ let sec1_nextSlider = ()=> {
           .animate({opacity:1}, function(){
             $('.page1_slides').append($('.page1_slides > li:eq(0)'));
             $('.page1_slides > li:last').removeClass('active');
-            state=1;
+            sec1_state=1;
           });
 }
-let prevSlider = ()=> {
-  state =0;
-  classNum--;
-  if(classNum == -1) {
-    classNum = 5;
+let sec1_prevSlider = ()=> {
+  sec1_state =0;
+  sec1_classNum--;
+  if(sec1_classNum == -1) {
+    sec1_classNum = 5;
   }
   $('.page1_slides > li:last')
           .addClass('active')
@@ -159,30 +159,30 @@ let prevSlider = ()=> {
           .animate({opacity:1}, function(){
             $('.page1_slides').prepend($(this));
             $('.page1_slides > li:eq(1)').removeClass('active');
-            state=1;
+            sec1_state=1;
           });
 }
-let timer = setInterval(nextSlider,3000);
+let sec1_timer = setInterval(sec1_nextSlider,3000);
 //버튼공통
 $('#mainsliderBtn button').on('click', function(e){
   e.preventDefault();
-  clearInterval(timer);
-  timer = setInterval(nextSlider,3000);
+  clearInterval(sec1_timer);
+  sec1_timer = setInterval(sec1_nextSlider,3000);
 });
 $('#mainslide_btnNext').on('click',function(){
-  if(state==1){
-    nextSlider();
+  if(sec1_state==1){
+    sec1_nextSlider();
   }
 
 });
 $('#mainslide_btnPrev').on('click',function(){
-  if(state==1){
-    prevSlider();
+  if(sec1_state==1){
+    sec1_prevSlider();
   }
 });
 /* section 1 end */
 
-/*유수현 자바스크립트 시작*/
+/*유수현 자바스크립트 시작*/ 
 
 /* 섹션2 */
 const pc = document.querySelector('#pcNotice button');
@@ -196,6 +196,8 @@ pc.addEventListener('click', function(){
   mobile.classList.remove('on')
   pc.classList.add('on')
   mSlider.classList.remove('see')
+  mSlider.classList.add('unsee')
+  pcSlider.classList.remove('unsee')
   pcSlider.classList.add('see')
   mBtn.classList.remove('see')
   pcBtn.classList.add('see')
@@ -204,6 +206,8 @@ mobile.addEventListener('click', function(){
   pc.classList.remove('on')
   mobile.classList.add('on')
   pcSlider.classList.remove('see')
+  pcSlider.classList.add('unsee')
+  mSlider.classList.remove('unsee')
   mSlider.classList.add('see')
   pcBtn.classList.remove('see')
   mBtn.classList.add('see')
@@ -212,4 +216,4 @@ mobile.addEventListener('click', function(){
 
 /* 푸터 */
 
-/*유수현 자바스크립트 끝*/
+/*유수현 자바스크립트 끝*/ 
