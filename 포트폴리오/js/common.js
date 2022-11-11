@@ -214,6 +214,8 @@ mobile.addEventListener('click', function(){
 });
 
 
+
+
 /* 푸터 */
 
 /*유수현 자바스크립트 끝*/ 
