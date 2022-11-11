@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
   }
-  body, ul, li, h1, h2, h3, p, dl, dd, fieldset, input, button, table, th, td, figure {
+  body, ul, li, h1, h2, h3, h4, h5, p, dl, dd, fieldset, input, button, table, th, td, figure {
     margin : 0;
     padding : 0;
   }

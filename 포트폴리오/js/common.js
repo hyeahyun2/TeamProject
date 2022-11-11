@@ -182,7 +182,7 @@ $('#mainslide_btnPrev').on('click',function(){
 });
 /* section 1 end */
 
-/*유수현 자바스크립트 시작*/
+/*유수현 자바스크립트 시작*/ 
 
 /* 섹션2 */
 const pc = document.querySelector('#pcNotice button');
@@ -196,6 +196,8 @@ pc.addEventListener('click', function(){
   mobile.classList.remove('on')
   pc.classList.add('on')
   mSlider.classList.remove('see')
+  mSlider.classList.add('unsee')
+  pcSlider.classList.remove('unsee')
   pcSlider.classList.add('see')
   mBtn.classList.remove('see')
   pcBtn.classList.add('see')
@@ -204,6 +206,8 @@ mobile.addEventListener('click', function(){
   pc.classList.remove('on')
   mobile.classList.add('on')
   pcSlider.classList.remove('see')
+  pcSlider.classList.add('unsee')
+  mSlider.classList.remove('unsee')
   mSlider.classList.add('see')
   pcBtn.classList.remove('see')
   mBtn.classList.add('see')
@@ -212,4 +216,4 @@ mobile.addEventListener('click', function(){
 
 /* 푸터 */
 
-/*유수현 자바스크립트 끝*/
+/*유수현 자바스크립트 끝*/ 
