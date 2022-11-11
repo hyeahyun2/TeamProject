@@ -207,16 +207,6 @@ div#headerWrap.enabled ul > li > a {
   text-transform: uppercase;
   z-index: 99;
 }
-.rightQuickMenu > a::after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 10px;
-  position: absolute;
-  top: 15px;
-  left: calc(50% - 9px);
-  background: url(../images/etcMain/top_btn_arrow.png) no-repeat center / cover;
-}
 .rightQuickMenu ul > li:nth-child(2) > a {
   display: block;
   text-align: center;
