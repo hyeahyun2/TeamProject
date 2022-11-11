@@ -23,6 +23,7 @@ body {
   margin : 35px auto 0 auto;
   background-color: rgba(255,255,255,0.3);
   box-sizing: content-box;
+  z-index: 99;
 }
 
 #upperSmallNav a {
@@ -171,7 +172,7 @@ div#headerWrap.enabled ul > li > a {
   top: -25px;
   opacity: 0;
 }
-.rightQuickMenu > ul {
+.rightQuickMenu > nav {
   position: fixed;
   right: 18px;
   top: 50%;
@@ -184,18 +185,14 @@ div#headerWrap.enabled ul > li > a {
   font-weight: 500;
   line-height: 28px;
 }
-.rightQuickMenu ul > li > a {
-  color: white;
-}
-.rightQuickMenu ul > li:nth-child(1) {
+.rightQuickMenu ul {
   display: block;
   width: 96px;
-  height: 162px;
-  background-color: #af231c;
-  border-radius: 96px;
+  height: 180px;
+  background-color: lightgray;
+  border-radius: 20px;
   text-align: center;
 }
-
 .rightQuickMenu > a {
   display: block;
   text-align: center;

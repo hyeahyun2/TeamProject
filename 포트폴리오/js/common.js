@@ -125,9 +125,64 @@ $(".rightQuickMenu > a").on("click", function (e) {
       headerLeftNavBar.style.top = "0px";
     });
 });
+/* section 1 start*/
+//page1 slides
+let sec1_pos;
+let sec1_sLength = $('.page1_slides > li').length;
+let sec1_state = 1; //움직임제어조건변수
+let sec1_num;
+let sec1_classNum = 0;
+let sec1_nextSlider = ()=> {
+  state = 0;
+  classNum++;
+  if(classNum == 6) {
+    classNum = 0;
+  }
+  $('.page1_slides > li:eq(1)')
+          .addClass('active')
+          .css({opacity: 0})
+          .animate({opacity:1}, function(){
+            $('.page1_slides').append($('.page1_slides > li:eq(0)'));
+            $('.page1_slides > li:last').removeClass('active');
+            state=1;
+          });
+}
+let prevSlider = ()=> {
+  state =0;
+  classNum--;
+  if(classNum == -1) {
+    classNum = 5;
+  }
+  $('.page1_slides > li:last')
+          .addClass('active')
+          .css({opacity: 0})
+          .animate({opacity:1}, function(){
+            $('.page1_slides').prepend($(this));
+            $('.page1_slides > li:eq(1)').removeClass('active');
+            state=1;
+          });
+}
+let timer = setInterval(nextSlider,3000);
+//버튼공통
+$('#mainsliderBtn button').on('click', function(e){
+  e.preventDefault();
+  clearInterval(timer);
+  timer = setInterval(nextSlider,3000);
+});
+$('#mainslide_btnNext').on('click',function(){
+  if(state==1){
+    nextSlider();
+  }
 
+});
+$('#mainslide_btnPrev').on('click',function(){
+  if(state==1){
+    prevSlider();
+  }
+});
+/* section 1 end */
 
-/*유수현 자바스크립트 시작*/ 
+/*유수현 자바스크립트 시작*/
 
 /* 섹션2 */
 const pc = document.querySelector('#pcNotice button');
@@ -157,4 +212,4 @@ mobile.addEventListener('click', function(){
 
 /* 푸터 */
 
-/*유수현 자바스크립트 끝*/ 
+/*유수현 자바스크립트 끝*/
