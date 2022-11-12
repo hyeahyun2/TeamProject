@@ -19,8 +19,16 @@ const headerLeftNavLi = document.querySelectorAll(".count > li");
 const headerLeftNavA = document.querySelectorAll(".count > li > a");
 const headerLeftNavBar = document.querySelector("#headerBar");
 const rightQuick = document.querySelector("#rightQuick");
-
+const post_sec4 = document.querySelector(".Post_sec4");
 /* 제이쿼리 원페이지 */
+
+let mouse_is_not_in_post_sec4 = true;
+post_sec4.addEventListener("mouseover", function () {
+  mouse_is_not_in_post_sec4 = false;
+});
+post_sec4.addEventListener("mouseout", function () {
+  mouse_is_not_in_post_sec4 = true;
+});
 
 let wheelParam = 0;
 let param = 1;
@@ -29,7 +37,7 @@ let leftPageCountingParam = 0;
 let nWheel = 1;
 let stateW = 1;
 let wheeling = (e) => {
-  if (e.wheelDelta < 0 && stateW == 1) {
+  if (e.wheelDelta < 0 && stateW == 1 && mouse_is_not_in_post_sec4==true) {
     stateW = 0;
     nWheel++;
     if (nWheel > 6) {
@@ -53,7 +61,7 @@ let wheeling = (e) => {
         headerLeftNavBar.style.height = `${24 * (nWheel)}px`;
       }
     }
-  } else if (e.wheelDelta > 0 && stateW == 1) {
+  } else if (e.wheelDelta > 0 && stateW == 1 && mouse_is_not_in_post_sec4==true) {
     stateW = 0;
     nWheel--;
     if (nWheel < 1) {
