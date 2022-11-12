@@ -18,7 +18,6 @@ const headerLeftNavUl = document.querySelector(".count");
 const headerLeftNavLi = document.querySelectorAll(".count > li");
 const headerLeftNavA = document.querySelectorAll(".count > li > a");
 const headerLeftNavBar = document.querySelector("#headerBar");
-const pages = document.querySelectorAll(".page");
 const rightQuick = document.querySelector("#rightQuick");
 
 /* 제이쿼리 원페이지 */
@@ -37,10 +36,10 @@ let wheeling = (e) => {
       nWheel = 6;
       stateW = 1;
     } else {
-      console.log(nWheel, $(".page" + nWheel).position().top);
+      console.log(nWheel, $(".onePage" + nWheel).position().top);
       $("html, body")
         .stop()
-        .animate({ scrollTop: $(".page" + nWheel).position().top }, function () {
+        .animate({ scrollTop: $(".onePage" + nWheel).position().top }, function () {
           stateW = 1;
         });
       for (let i = 0; i < headerLeftNavLi.length - 1; i++) {
@@ -64,7 +63,7 @@ let wheeling = (e) => {
       console.log(nWheel);
       $("html, body")
         .stop()
-        .animate({ scrollTop: $(".page" + nWheel).position().top }, function () {
+        .animate({ scrollTop: $(".onePage" + nWheel).position().top }, function () {
           stateW = 1;
         });
       for (let i = 0; i < headerLeftNavLi.length - 1; i++) {
