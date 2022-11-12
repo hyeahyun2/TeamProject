@@ -32,8 +32,21 @@
         <ul id="gnbList">
           <li class="gnbListChild"><a href="#">팝니다</a></li>
           <li class="gnbListChild"><a href="#">삽니다</a></li>
-          <li class="gnbListChild"><a href="#">커뮤니티</a></li>
-          <li class="gnbListChild"><a href="#">고객센터</a></li>
+          <li class="gnbListChild"><a href="#">커뮤니티</a>
+            <ul class="snb">
+              <li><a href="#">후기</a></li>
+              <li><a href="#">인기글</a></li>
+              <li><a href="#">자유게시판</a></li>
+              <li><a href="#">정보게시판</a></li>
+            </ul>
+          </li>
+          <li class="gnbListChild"><a href="#">고객센터</a>
+            <ul class="snb">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">신고하기</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -42,17 +55,18 @@
     <div class="leftNav">
       <h2 class="hidden">페이지넘버</h2>
       <ul class="count">
-        <li><a href="#">01</a></li>
-        <li><a href="#">02</a></li>
-        <li><a href="#">03</a></li>
-        <li><a href="#">04</a></li>
-        <li><a href="#">05</a></li>
-        <li><a href="#">05</a></li>
-        <li><a href="#">05</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">6</a></li>
       </ul>
       <span id="headerBar"></span>
     </div>
-    <section class="mainslider page1 page">
+    <section class="mainslider onePage1">
       <h2 class="hidden">프로모션</h2>
       <div id="mainsliderBtn">
         <button id="mainslide_btnPrev">이전 슬라이더</button>
@@ -70,14 +84,14 @@
       </ul>
     </section>
     <!-- 유수현 영역1 시작 -->
-    <section class="page2Wrap_sh pageWrap_sh">
+    <section class="page2Wrap_sh pageWrap_sh onePage2">
       <div class="page2 page">
         <div id="pcNotice">
-          <button class="on">PC tutorial</button>
+          <button class="on">PC</button>
           <p>쉽고 간편하게! <br> 트레닌에서 닌텐도를 <br> 중고로 거래하세요!</p>
         </div>
         <div id="PCBtnWrap_sh" class="see">
-          <button class="PCBtn_sh">다음 스텝 보기</button>
+          <button class="PCBtn_sh">다음 튜토리얼 보기</button>
         </div>
         <div id="PCSliderWrap_sh" class="see">
           <ul class="PCSlider1_sh">
@@ -90,12 +104,12 @@
           </ul>
         </div>
         <div id="mobileNotice">
-          <button>mobile tutorial</button>
+          <button>mobile</button>
         </div>
         <div id="MBtnWrap_sh">
-          <button class="MBtn_sh">다음 스텝 보기</button>
+          <button class="MBtn_sh">다음 튜토리얼 보기</button>
         </div>
-        <div id="MSliderWrap_sh">
+        <div id="MSliderWrap_sh" class="unsee">
           <ul class="MSlider_sh">
             <img src="./sh_images/phone.png" alt="mobile의 모습">
             <li class="MSlider_sh MSlider1"><a href="#">회원가입</a></li>
@@ -108,7 +122,7 @@
       </div>
     </section>
     <!-- 유수현 영역2 끝 -->
-    <section id="sec3Wrap_hj">
+    <section id="sec3Wrap_hj" class="onePage3">
       <div>
         <div id="headerWrap_hj">
           <h2 id="sec3Header_hj">최근 올라온 판매 상품!</h2>
@@ -196,7 +210,7 @@
         </div>
       </div>
     </section>
-    <section class="page4 page">
+    <section class="page4 page onePage4">
       <ul class="Category_sec4">
         <li class="check_gory">후기글</li>
         <li>자유게시판</li>
@@ -358,7 +372,7 @@
         </div>
       </div>
     </section>
-    <section class="page5 page">
+    <section class="page5 page onePage5">
     </section>
   </main>
   <section id="rightQuick">
@@ -366,6 +380,9 @@
       <h2 class="hidden">rightQuick</h2>
       <nav>
         <ul>
+          <li>
+            <a href="#">채팅상담</a>
+          </li>
           <li>
             <a href="#">찜하기</a>
           </li>
@@ -380,8 +397,8 @@
     </div>
   </section>
   <!-- 유수현 영역2 시작 -->
-  <div class="footerWrap page">
-    <footer class="page8" id="footer">
+  <div class="footerWrap page onePage6">
+    <footer class="page6" id="footer">
       <div id="membersWrap">
         <p class="member1_sh member_sh"><a href="hyehyun.jsp">김혜현</a></p>
         <p class="member2_sh member_sh"><a href="beomsu.jsp">오범수</a></p>

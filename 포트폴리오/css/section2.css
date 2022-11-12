@@ -16,7 +16,7 @@
     width: 200px;
     height: 200px;
     position: absolute; 
-    top:80px;
+    top:13vh;
     left:80px;
 
 }
@@ -26,33 +26,36 @@
     margin:0 auto;
     border: 0;
     background-color: white;
+    
 
 }
 .on{
-    color:grey;
+    color:lightblue;
+    
 
 }
 #pcNotice p{
     width: 400px;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 20vh;
     font-size: 28px;
     
 }
 #PCBtnWrap_sh{
     width: 420px;
     height: 80px;
+    border-radius: 10px;
     position:absolute;
-    top: 80px;;
-    right: 80px;;
+    bottom: 30vh;
+    left: 80px;
 
 }
 #PCBtnWrap_sh .PCBtn_sh{
     display: block;
     margin:0 auto;
-    font-size: 25px;
-    border:3px solid lightgray;
-    background-color: lightgray;
+    font-size: 27px;
+    border:3px solid skyblue;
+    background-color: skyblue;
     text-transform: uppercase;
    
 
@@ -61,7 +64,7 @@
     width: 420px;
     height: 420px;
     position:absolute;
-    bottom:80px;
+    bottom:20vh;
     right:80px;
   
 
@@ -77,41 +80,62 @@
 
 }
 .PCSlider1_sh{
+    width: 420px;
+    height: 420px;
+    
 
 }
 .PCSlider1_sh img{
-    height: 420px;
+    height: 500px;
 
 }
 .PCSlider_sh a{
-    width: 420px;
-    height: 420px;
+    width: 495px;
+    height: 300px;
     display:block;
     text-indent: -9999px;
     position:absolute;
     bottom: 0px;
     right: 0px;
+    border: 1px solid black;
+}
+.PCSlider1_sh li{
+    position:absolute;
+    top:45px;
+    left:52px;
+
+}
+.PCSlider_sh{
+    width: 495px;
+    height: 300px;
+    background-size: cover;
+
 }
 .PCSlider1{
+    background-image:url(../sh_images/pc1.png);
 
 }
 .PCSlider2{
+    background-image:url(../sh_images/pc2.png);
 
 }
 .PCSlider3{
+    background-image:url(../sh_images/pc3.png);
 
 }
 .PCSlider4{
+    background-image:url(../sh_images/pc4.png);
 
 }
 .PCSlider5{
+    background-image:url(../sh_images/pc5.png);
 
 }
 #mobileNotice{
     width: 200px;
     height: 200px;
     position: absolute; 
-    top:80px;
+    top:13vh;
     left:280px;
 
 }
@@ -121,23 +145,24 @@
     margin:0 auto;
     border: 0;
     background-color: white;
+    text-transform: uppercase;
 
 }
 #MBtnWrap_sh{
     width: 420px;
     height: 80px;
     position:absolute;
-    top: 80px;
-    right: 80px;
+    bottom: 30vh;
+    left: 80px;
 
   
 }
 #MBtnWrap_sh .MBtn_sh{
     display: block;
     margin:0 auto;
-    font-size: 25px;
-    border:3px solid lightgray;
-    background-color: lightgray;
+    font-size: 27px;
+    border:3px solid skyblue;
+    background-color: skyblue;
     text-transform: uppercase;
 
 }
@@ -145,43 +170,60 @@
     width: 420px;
     height: 420px;
     position:absolute;
-    bottom: 80px;;
-    right: 80px;
+    bottom: 25vh;
+    right: 70px;
 }
 #MSliderWrap_sh .MSlider_sh{
 
 }
 .MSlider_sh{
-
+    width: 400px;
+    height: 400px;
     
+}
+.MSlider_sh li{
+    position:absolute;
+    top:120px;
+    left:60px;
 
 }
 .MSlider_sh img{
-    height: 420px;
+    height: 500px;
     
 }
 .MSlider_sh a{
-    width: 420px;
-    height: 420px;
+    width: 380px;
+    height: 380px;
     display:block;
     text-indent: -9999px;
     position:absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
+    border: 1px solid black;
 
 }
+.MSlider_sh{
+    width: 380px;
+    height: 380px;
+    background-size: cover;
+}
 .MSlider1{
+    background-image: url(../sh_images/m1.png);
 
 }
 .MSlider2{
+    background-image: url(../sh_images/m2.png);
 
 }
 .MSlider3{
+    background-image: url(../sh_images/m3.png);
 
 }
 .MSlider4{
+    background-image: url(../sh_images/m4.png);
 
 }
 .MSlider5{
+    background-image: url(../sh_images/m5.png);
 
 }
