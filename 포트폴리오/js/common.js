@@ -19,7 +19,30 @@ const headerLeftNavLi = document.querySelectorAll(".count > li");
 const headerLeftNavA = document.querySelectorAll(".count > li > a");
 const headerLeftNavBar = document.querySelector("#headerBar");
 const rightQuick = document.querySelector("#rightQuick");
+const rightQuickMenu = document.querySelector(".rightQuickMenu");
 const post_sec4 = document.querySelector(".Post_sec4");
+const rightSearch = document.querySelector("#rightSearch");
+const rightSearchPage = document.querySelector("#rightSearchPage");
+const rightSearchClose = document.querySelector("#rightSearchClose");
+const upperSmallNav = document.querySelector("#upperSmallNav");
+
+
+/* 검색창 */
+rightSearch.addEventListener("click",function(){
+  rightSearchPage.classList.add("active");
+  upperSmallNav.style.opacity=0;
+  rightQuickMenu.style.opacity=0;
+  headerLeftNav.style.opacity=0;
+  headerWrap.style.opacity=0;
+});
+rightSearchClose.addEventListener("click",function(){
+  rightSearchPage.classList.remove("active");
+  upperSmallNav.style.opacity=1;
+  rightQuickMenu.style.opacity=1;
+  headerLeftNav.style.opacity=1;
+  headerWrap.style.opacity=1;
+});
+
 /* 제이쿼리 원페이지 */
 
 let mouse_is_not_in_post_sec4 = true;
@@ -216,9 +239,26 @@ mobile.addEventListener('click', function(){
   mBtn.classList.add('see')
 });
 
-
-
-
 /* 푸터 */
 
-/*유수현 자바스크립트 끝*/
+const member =document.querySelectorAll('.member_sh a');
+
+for(let a= 0; a < 5; a++){
+member[a].addEventListener('mouseenter', function() {
+  for(let i = 0; i< member.length; i++){
+      member[i].classList.remove('onX');
+      member[a].classList.add('onX');
+  }
+})
+}
+
+for(let b= 0; b < 5; b++){
+  member[b].addEventListener('mouseleave', function() {
+    for(let i = 0; i< member.length; i++){
+      member[i].classList.remove('offX');
+      member[b].classList.add('offX');
+    }
+  })
+  }
+
+/*유수현 자바스크립트 끝*/ 

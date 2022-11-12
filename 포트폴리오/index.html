@@ -121,7 +121,7 @@
         </div>
       </div>
     </section>
-    <!-- 유수현 영역2 끝 -->
+    <!-- 유수현 영역1 끝 -->
     <section id="sec3Wrap_hj" class="onePage3">
       <div>
         <div id="headerWrap_hj">
@@ -389,16 +389,34 @@
           <li>
             <a href="#">장바구니</a>
           </li>
-          <li>
+          <li id="rightSearch">
             <a href="#">검색</a>
           </li>
         </ul>
       </nav>
     </div>
+    <section id="rightSearchPage">
+      <form action="/mainSearch" method="get" id="searchWrap">
+        <fieldset>
+          <legend>검색하기</legend>
+          <input type="text" name="keyword" placeholder="검색어를 입력하세요">
+          <select name="searchCategory" id="cars">
+            <option value="제목">제목</option>
+            <option value="내용">내용</option>
+            <option value="제목내용">제목+내용</option>
+            <option value="글쓴이">글쓴이</option>
+          </select>
+          <input type="submit" value="검색">
+        </fieldset>
+      </form>
+      <button id="rightSearchClose">검색창 닫기</button>
+    </section>
   </section>
+
   <!-- 유수현 영역2 시작 -->
-  <div class="footerWrap page onePage6">
-    <footer class="page6" id="footer">
+  <div class="footerWrap page">
+    <footer class="page8" id="footer">
+      <p class="us">about us</p>
       <div id="membersWrap">
         <p class="member1_sh member_sh"><a href="hyehyun.jsp">김혜현</a></p>
         <p class="member2_sh member_sh"><a href="beomsu.jsp">오범수</a></p>
