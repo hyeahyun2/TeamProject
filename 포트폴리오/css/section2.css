@@ -70,7 +70,7 @@
 
 }
 .see{
-    z-index: 9;
+    z-index: 3;
     opacity:1;
 }
 .unsee{
@@ -87,6 +87,8 @@
 }
 .PCSlider1_sh img{
     height: 500px;
+
+
 
 }
 .PCSlider_sh a{
@@ -109,14 +111,15 @@
     width: 495px;
     height: 300px;
     background-size: cover;
+    z-index:2;
 
 }
 .PCSlider1{
-    background-image:url(../sh_images/pc1.png);
+    background-image:url(../sh_images/pc5.png);
 
 }
 .PCSlider2{
-    background-image:url(../sh_images/pc2.png);
+    background-image:url(../sh_images/pc4.png);
 
 }
 .PCSlider3{
@@ -124,11 +127,11 @@
 
 }
 .PCSlider4{
-    background-image:url(../sh_images/pc4.png);
+    background-image:url(../sh_images/pc2.png);
 
 }
 .PCSlider5{
-    background-image:url(../sh_images/pc5.png);
+    background-image:url(../sh_images/pc1.png);
 
 }
 #mobileNotice{
@@ -191,7 +194,7 @@
     height: 500px;
     
 }
-.MSlider_sh a{
+.MSlider a{
     width: 380px;
     height: 380px;
     display:block;
@@ -202,17 +205,18 @@
     border: 1px solid black;
 
 }
-.MSlider_sh{
+.MSlider{
     width: 380px;
     height: 380px;
     background-size: cover;
+    z-index:2;
 }
 .MSlider1{
-    background-image: url(../sh_images/m1.png);
+    background-image: url(../sh_images/m5.png);
 
 }
 .MSlider2{
-    background-image: url(../sh_images/m2.png);
+    background-image: url(../sh_images/m4.png);
 
 }
 .MSlider3{
@@ -220,10 +224,10 @@
 
 }
 .MSlider4{
-    background-image: url(../sh_images/m4.png);
+    background-image: url(../sh_images/m2.png);
 
 }
 .MSlider5{
-    background-image: url(../sh_images/m5.png);
+    background-image: url(../sh_images/m1.png);
 
 }
