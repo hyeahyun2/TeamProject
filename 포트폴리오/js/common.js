@@ -30,38 +30,34 @@ mobile.addEventListener('click', function(){
 });
 
 /*섹션2 슬라이더*/
-
-// function pcSlider_sh() {
-//   $('.PCSlider_sh li:last').prependTo('.PCSlider1_sh')
-//   $('.PCSlider1_sh').css({'opacity':1}).animate({'opacity':0},500)
-// }
-// function mSlider_sh() {
-//   $('.MSlider li:last').prependTo('.MSlider_sh')
-
-// }
-
-// setInterval(pcSlider_sh,1000)
-// setInterval(mSlider_sh,1000)
-
-const member =document.querySelectorAll('.member_sh a');
-
-for(let a= 0; a < 5; a++){
-member[a].addEventListener('mouseenter', function() {
-  for(let i = 0; i< member.length; i++){
-      member[i].classList.remove('onX');
-      member[a].classList.add('onX');
-  }
-})
+function pcSlider_sh() {
+  $('.PCSlider1_sh').append($('.PCSlider1_sh li:first')).css({'opacity':0}).animate({'opacity':1},2000)
+}
+function mSlider_sh() {
+  $('.MSlider_sh').append($('.MSlider_sh li:first')).css({'opacity':0}).animate({'opacity':1},2000)
 }
 
-for(let b= 0; b < 5; b++){
-  member[b].addEventListener('mouseleave', function() {
-    for(let i = 0; i< member.length; i++){
-      member[i].classList.remove('offX');
-      member[b].classList.add('offX');
-    }
-  })
-  }
+let pcpc = setInterval(pcSlider_sh,2000);
+let mbmb = setInterval(mSlider_sh,2000);
+
+/*슬라이더 버튼 */
+const pcBtn_sh = document.querySelector('.PCBtn_sh')
+const mBtn_sh = document.querySelector('.MBtn_sh')
+
+$('.PCBtn_sh').on('click',function(){
+  clearInterval(pcpc);
+  pcSlider_sh();
+  pcpc = setInterval(pcSlider_sh,2000);
+})
+$('.MBtn_sh').on('click',function(){
+  clearInterval(mbmb);
+  mSlider_sh();
+  mbmb =setInterval(mSlider_sh,2000);;
+})
+
+
+
+/* 푸터 */
 
 const member_sh =document.querySelectorAll('.member_sh a');
 

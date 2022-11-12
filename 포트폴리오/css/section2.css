@@ -113,7 +113,7 @@
     
 
 }
-.PCSlider1_sh img{
+.img{
     height: 500px;
     transform:scale(1.2);
 }
@@ -138,15 +138,15 @@
     height: 365px;
     border-radius: 50px;
     background-size: cover;
-    z-index:2;
+    
 
 }
 .PCSlider1{
-    background-image:url(../sh_images/pc5.png);
+    background-image:url(../sh_images/pc1.png);
 
 }
 .PCSlider2{
-    background-image:url(../sh_images/pc4.png);
+    background-image:url(../sh_images/pc2.png);
 
 }
 .PCSlider3{
@@ -154,11 +154,11 @@
 
 }
 .PCSlider4{
-    background-image:url(../sh_images/pc2.png);
+    background-image:url(../sh_images/pc4.png);
 
 }
 .PCSlider5{
-    background-image:url(../sh_images/pc1.png);
+    background-image:url(../sh_images/pc5.png);
 
 }
 #mobileNotice{
@@ -220,15 +220,16 @@
 }
 .MSlider_sh li{
     position:absolute;
-    top:-12px;
+    top:-8px;
     left:121px;
 
 }
-.MSlider_sh img{
+#MSliderWrap_sh > .img{
     height: 500px;
     transform:scale(1.2);
     position:relative;
-    bottom:4vh;
+    bottom:3vh
+
     
 }
 .MSlider a{
@@ -246,15 +247,16 @@
     width: 435px;
     height: 530px;
     background-size: cover;
+    background-position: right;
     z-index:2;
     border-radius: 65px 65px 0 0;
 }
 .MSlider1{
-    background-image: url(../sh_images/m5.png);
+    background-image: url(../sh_images/m1.png);
 
 }
 .MSlider2{
-    background-image: url(../sh_images/m4.png);
+    background-image: url(../sh_images/m2.png);
 
 }
 .MSlider3{
@@ -262,10 +264,10 @@
 
 }
 .MSlider4{
-    background-image: url(../sh_images/m2.png);
+    background-image: url(../sh_images/m4.png);
 
 }
 .MSlider5{
-    background-image: url(../sh_images/m1.png);
+    background-image: url(../sh_images/m5.png);
 
 }
