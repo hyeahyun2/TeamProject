@@ -8,7 +8,7 @@
   align-items: center;
 }
 .Category_sec4{
-  width: 70%; height: 10vh;
+  width: 70%; height: 7vh;
   /* border: 1px solid #000; */
   display: flex;
   gap: 20px;
@@ -16,18 +16,18 @@
   position: relative;
 }
 .Category_sec4 > li {
-  width: 12%;
+  width: 10%;
   border: 2px solid #949494;
   background-color: #dbdbdb;
   border-radius: 5% 5% 0 0;
   text-align: center;
-  line-height: 10vh;
+  line-height: 7vh;
   position: relative;
   bottom: 0;
   transition: 1s;
 }
 .Category_sec4 > .check_gory {
-  bottom: -10vh;
+  bottom: -7vh;
 }
 .Post_sec4 {
   width: 70%; height: 60vh;
@@ -56,6 +56,7 @@
 }
 .Post_sec4 > div ul {
   display: none;
+  position: relative;
 }
 .Post_sec4 > div > .check_sec4 {
   display: flex;
@@ -72,6 +73,7 @@
   border: 1px solid #dbdbdb;
   margin: 10px;
   display: flex;
+  position: relative;
 }
 .List_sec4 .Img_sec4 {
   display: block;
