@@ -19,14 +19,10 @@ const headerLeftNavLi = document.querySelectorAll(".count > li");
 const headerLeftNavA = document.querySelectorAll(".count > li > a");
 const headerLeftNavBar = document.querySelector("#headerBar");
 const pages = document.querySelectorAll(".page");
-const goHamburger = document.querySelector(".hamburger");
-const hamburgerClose = document.querySelector("#closeHamburger");
-const mHeaderWrap = document.querySelector("#mHeaderWrap");
-const mUpperSmallNav = document.querySelector("#mUpperSmallNav");
 const rightQuick = document.querySelector("#rightQuick");
 
 /* 제이쿼리 원페이지 */
-/*
+
 let wheelParam = 0;
 let param = 1;
 let leftPageCounting = 0;
@@ -37,8 +33,8 @@ let wheeling = (e) => {
   if (e.wheelDelta < 0 && stateW == 1) {
     stateW = 0;
     nWheel++;
-    if (nWheel > 8) {
-      nWheel = 8;
+    if (nWheel > 6) {
+      nWheel = 6;
       stateW = 1;
     } else {
       console.log(nWheel, $(".page" + nWheel).position().top);
@@ -50,12 +46,12 @@ let wheeling = (e) => {
       for (let i = 0; i < headerLeftNavLi.length - 1; i++) {
         headerLeftNavLi[i].style.opacity = "0";
       }
-      if (nWheel == 8) {
+      if (nWheel == 6) {
         headerLeftNavLi[nWheel - 1].style.opacity = "1";
-        headerLeftNavBar.style.top = `${19 * (nWheel - 2)}px`;
+        headerLeftNavBar.style.height = `${24 * (nWheel) - 2}px`;
       } else {
         headerLeftNavLi[nWheel - 1].style.opacity = "1";
-        headerLeftNavBar.style.top = `${19 * (nWheel - 1)}px`;
+        headerLeftNavBar.style.height = `${24 * (nWheel)}px`;
       }
     }
   } else if (e.wheelDelta > 0 && stateW == 1) {
@@ -75,7 +71,7 @@ let wheeling = (e) => {
         headerLeftNavLi[i].style.opacity = "0";
       }
       headerLeftNavLi[nWheel - 1].style.opacity = "1";
-      headerLeftNavBar.style.top = `${19 * (nWheel - 1)}px`;
+      headerLeftNavBar.style.height = `${24 * (nWheel)}px`;
     }
   }
 };
@@ -109,7 +105,7 @@ window.addEventListener("resize", function () {
 let headerLeftCount = 0;
 headerLeftNavA[0].style.opacity = "1";
 headerLeftNavLi[0].style.opacity = "1";
-*/
+
 //top btn
 $(".rightQuickMenu > a").on("click", function (e) {
   e.preventDefault();
@@ -182,7 +178,7 @@ $('#mainslide_btnPrev').on('click',function(){
 });
 /* section 1 end */
 
-/*유수현 자바스크립트 시작*/ 
+/*유수현 자바스크립트 시작*/
 
 /* 섹션2 */
 const pc = document.querySelector('#pcNotice button');
@@ -216,4 +212,4 @@ mobile.addEventListener('click', function(){
 
 /* 푸터 */
 
-/*유수현 자바스크립트 끝*/ 
+/*유수현 자바스크립트 끝*/
