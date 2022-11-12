@@ -1,4 +1,4 @@
-header sticky
+//header sticky
  const headerWrap = document.querySelector("#headerWrap");
  const pageSelector = document.querySelector(".mainslider");
 
@@ -42,14 +42,6 @@ rightSearchClose.addEventListener("click",function(){
   headerLeftNav.style.opacity=1;
   headerWrap.style.opacity=1;
 });
-
- const headerLeftNav = document.querySelector(".leftNav");
- const headerLeftNavUl = document.querySelector(".count");
- const headerLeftNavLi = document.querySelectorAll(".count > li");
- const headerLeftNavA = document.querySelectorAll(".count > li > a");
- const headerLeftNavBar = document.querySelector("#headerBar");
- const rightQuick = document.querySelector("#rightQuick");
- const post_sec4 = document.querySelector(".Post_sec4");
 
 /* 제이쿼리 원페이지 */
 
