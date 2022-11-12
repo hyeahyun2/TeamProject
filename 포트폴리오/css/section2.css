@@ -30,6 +30,7 @@
 #pcNotice button{
     display:block;
     font-size: 30px;
+    font-weight: bold;
     margin:0 auto;
     border: 0;
     background-color: transparent;
@@ -165,6 +166,7 @@
     display:block;
     background-color: transparent;
     font-size: 30px;
+    font-weight: bold;
     margin:0 auto;
     border: 0;
     text-transform: uppercase;
