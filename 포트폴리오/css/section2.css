@@ -11,15 +11,7 @@
 
 
 }
-/* .page2Wrap_sh::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color:rgba(0,0,0,0.2);
-    position:absolute;
-    top:0;
-    z-index: 1;
-} */
+
 .page2{
     width: 1000px;
     height: 80wh;
