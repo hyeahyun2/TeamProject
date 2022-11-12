@@ -216,9 +216,29 @@ mobile.addEventListener('click', function(){
   mBtn.classList.add('see')
 });
 
-
-
-
 /* 푸터 */
 
-/*유수현 자바스크립트 끝*/
+const member =document.querySelectorAll('.member_sh a');
+
+for(let a= 0; a < 5; a++){
+member[a].addEventListener('mouseenter', function() {
+  for(let i = 0; i< member.length; i++){
+      member[i].classList.remove('onX');
+      member[a].classList.add('onX');
+  }
+})
+}
+
+for(let b= 0; b < 5; b++){
+  member[b].addEventListener('mouseleave', function() {
+    for(let i = 0; i< member.length; i++){
+      member[i].classList.remove('offX');
+      member[b].classList.add('offX');
+    }
+  })
+  }
+
+
+
+
+/*유수현 자바스크립트 끝*/ 
