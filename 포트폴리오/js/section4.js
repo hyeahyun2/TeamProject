@@ -6,6 +6,7 @@ const sec4_h5 = sec4_post.querySelector("h5");
 const sec4_list = sec4_post.querySelectorAll("ul");
 const sec4_item = sec4_post.querySelectorAll("li");
 console.log(sec4_div);
+// 클릭한 카테고리 글 목록 보이기
 sec4_gory.forEach((element, i) => {
   element.addEventListener("click",(q)=>{
 
