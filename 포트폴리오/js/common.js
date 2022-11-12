@@ -1,37 +1,3 @@
-//header left/right Side
-<<<<<<< HEAD
-const headerLeftNav = document.querySelector(".leftNav");
-const headerLeftNavUl = document.querySelector(".count");
-const headerLeftNavLi = document.querySelectorAll(".count > li");
-const headerLeftNavA = document.querySelectorAll(".count > li > a");
-const headerLeftNavBar = document.querySelector("#headerBar");
-const rightQuick = document.querySelector("#rightQuick");
-const rightQuickMenu = document.querySelector(".rightQuickMenu");
-const post_sec4 = document.querySelector(".Post_sec4");
-const rightSearch = document.querySelector("#rightSearch");
-const rightSearchPage = document.querySelector("#rightSearchPage");
-const rightSearchClose = document.querySelector("#rightSearchClose");
-const upperSmallNav = document.querySelector("#upperSmallNav");
-
-
-/* 검색창 */
-rightSearch.addEventListener("click",function(){
-  rightSearchPage.classList.add("active");
-  upperSmallNav.style.opacity=0;
-  rightQuickMenu.style.opacity=0;
-  headerLeftNav.style.opacity=0;
-  headerWrap.style.opacity=0;
-});
-rightSearchClose.addEventListener("click",function(){
-  rightSearchPage.classList.remove("active");
-  upperSmallNav.style.opacity=1;
-  rightQuickMenu.style.opacity=1;
-  headerLeftNav.style.opacity=1;
-  headerWrap.style.opacity=1;
-});
-
-
-
 
 /*유수현 자바스크립트 시작*/
 
