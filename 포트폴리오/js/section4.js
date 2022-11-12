@@ -21,5 +21,3 @@ sec4_gory.forEach((element, i) => {
     sec4_list[i].classList.add("check_sec4");
   })
 });
-
-// 버튼 클릭 애니메이션
