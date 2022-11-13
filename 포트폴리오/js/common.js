@@ -60,7 +60,7 @@ function pcSlider_sh () {
     PCSlider_sh[List_sh].style.opacity = 1;
     List_sh++;
     if(List_sh == 5) List_sh=0;
-  },1)
+  },10)
 }
 
 function mSlider_sh () {
@@ -70,7 +70,7 @@ function mSlider_sh () {
     MSlider[List_mb].style.opacity = 1;
     List_mb++;
     if(List_mb == 5) List_mb=0;
-  },1)
+  },10)
 }
   
 let pcpc = setInterval(pcSlider_sh,3000);
