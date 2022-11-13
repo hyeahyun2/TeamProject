@@ -1,10 +1,17 @@
 @charset "utf-8";
 
 .page2Wrap_sh{
+    background-image:url(../sh_images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
+    position:relative;
+
 
 }
+
 .page2{
     width: 1000px;
     height: 80wh;
@@ -23,22 +30,32 @@
 #pcNotice button{
     display:block;
     font-size: 30px;
+    font-weight: bold;
     margin:0 auto;
     border: 0;
-    background-color: white;
+    background-color: transparent;
+    position:relative;
+    top:3vh;
+    z-index: 3;
     
 
 }
 .on{
-    color:lightblue;
+    color:black;
+    font-weight: bolder;
+    text-shadow: 0px 0px 40px #292929;
     
 
 }
 #pcNotice p{
     width: 400px;
+    height: 120px;
     text-align: center;
-    margin-top: 20vh;
-    font-size: 28px;
+    margin-top: 23vh;
+    font-size: 38px;
+    color:white;
+    font-weight: bold;
+    text-shadow : 5px 5px 3px black;
     
 }
 #PCBtnWrap_sh{
@@ -51,12 +68,16 @@
 
 }
 #PCBtnWrap_sh .PCBtn_sh{
+    width: 220px;
+    height: 30px;
     display: block;
-    margin:0 auto;
-    font-size: 27px;
-    border:3px solid skyblue;
-    background-color: skyblue;
+    margin:65px auto;
+    font-size: 22px;
+    border:3px solid white;
+    background-color: white;
     text-transform: uppercase;
+    border-radius: 17px;
+    box-shadow: 0px 0px 30px grey;
    
 
 }
@@ -85,39 +106,40 @@
     
 
 }
-.PCSlider1_sh img{
+.img{
     height: 500px;
     transform:scale(1.2);
 }
 .PCSlider_sh a{
-    width: 500px;
-    height: 350px;
+    width: 560px;
+    height: 365px;
+    border-radius: 50px;
     display:block;
     text-indent: -9999px;
     position:absolute;
-    bottom: 0px;
+    top: 0px;
     right: 0px;
-    border: 1px solid black;
 }
 .PCSlider1_sh li{
     position:absolute;
-    top:0;
-    left:86px;
+    top:-10px;
+    left:55px;
 
 }
 .PCSlider_sh{
-    width: 495px;
-    height: 345px;
+    width: 560px;
+    height: 365px;
+    border-radius: 50px;
     background-size: cover;
-    z-index:2;
+    
 
 }
 .PCSlider1{
-    background-image:url(../sh_images/pc5.png);
+    background-image:url(../sh_images/pc1.png);
 
 }
 .PCSlider2{
-    background-image:url(../sh_images/pc4.png);
+    background-image:url(../sh_images/pc2.png);
 
 }
 .PCSlider3{
@@ -125,11 +147,11 @@
 
 }
 .PCSlider4{
-    background-image:url(../sh_images/pc2.png);
+    background-image:url(../sh_images/pc4.png);
 
 }
 .PCSlider5{
-    background-image:url(../sh_images/pc1.png);
+    background-image:url(../sh_images/pc5.png);
 
 }
 #mobileNotice{
@@ -142,11 +164,15 @@
 }
 #mobileNotice button{
     display:block;
+    background-color: transparent;
     font-size: 30px;
+    font-weight: bold;
     margin:0 auto;
     border: 0;
-    background-color: white;
     text-transform: uppercase;
+    position:relative;
+    top:3vh;
+    z-index: 3;
 
 }
 #MBtnWrap_sh{
@@ -159,12 +185,16 @@
   
 }
 #MBtnWrap_sh .MBtn_sh{
+    width: 220px;
+    height: 30px;
     display: block;
-    margin:0 auto;
-    font-size: 27px;
-    border:3px solid skyblue;
-    background-color: skyblue;
+    margin:65px auto;
+    font-size: 22px;
+    border:3px solid white;
+    background-color: white;
     text-transform: uppercase;
+    border-radius: 17px;
+    box-shadow: 0px 0px 30px grey;
 
 }
 #MSliderWrap_sh{
@@ -184,38 +214,43 @@
 }
 .MSlider_sh li{
     position:absolute;
-    top:100px;
-    left:125px;
+    top:-8px;
+    left:121px;
 
 }
-.MSlider_sh img{
+#MSliderWrap_sh > .img{
     height: 500px;
     transform:scale(1.2);
+    position:relative;
+    bottom:3vh
+
     
 }
 .MSlider a{
-    width: 430px;
-    height: 450px;
+    width: 435px;
+    height: 530px;
     display:block;
     text-indent: -9999px;
     position:absolute;
     bottom: 0;
     right: 0;
-    border: 1px solid black;
+    border-radius: 65px 65px 0 0;
 
 }
 .MSlider{
-    width: 430px;
-    height: 450px;
+    width: 438px;
+    height: 530px;
     background-size: cover;
+    background-position: right;
     z-index:2;
+    border-radius: 65px 65px 0 0;
 }
 .MSlider1{
-    background-image: url(../sh_images/m5.png);
+    background-image: url(../sh_images/m1.png);
 
 }
 .MSlider2{
-    background-image: url(../sh_images/m4.png);
+    background-image: url(../sh_images/m2.png);
 
 }
 .MSlider3{
@@ -223,10 +258,10 @@
 
 }
 .MSlider4{
-    background-image: url(../sh_images/m2.png);
+    background-image: url(../sh_images/m4.png);
 
 }
 .MSlider5{
-    background-image: url(../sh_images/m1.png);
+    background-image: url(../sh_images/m5.png);
 
 }
