@@ -49,6 +49,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 200%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -57,7 +58,7 @@
   transition: 0.5s;
 }
 .Slider_hj li {
-  width: 100%;
+  width: 25%;
   height: 100%;
   margin: 0 10px 0 10px;
 }
