@@ -79,11 +79,11 @@ let nextSlider = ()=> {
         sList.style.transition = '0s';
         const newSliderList = sList.querySelectorAll('.Slider_hj li');
         sList.append(newSliderList[0]);
-        sNum =37.5;
+        sNum = 37.5;
         sList.style.transform = `translateX(-${sNum}%)`;
       }
       state = 1;
-    }, 1000)
+    }, 1000);
 }
 let prevSlider = ()=> {
   sList.style.transition = '1s';
@@ -108,6 +108,7 @@ btn[1].addEventListener('click', ()=> {
     if ( state == 1) {
       state = 0;
       nextSlider();
+      timer = setInterval(nextSlider, 2500);
     }
 })
 btn[0].addEventListener('click', ()=> {
@@ -115,6 +116,7 @@ btn[0].addEventListener('click', ()=> {
     if ( state == 1 ) {
       state = 0;
       prevSlider();
+      timer = setInterval(nextSlider, 2500);  
     }
 })
 
