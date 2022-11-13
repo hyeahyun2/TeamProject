@@ -61,114 +61,61 @@
 //   }
 // })
 
-
-// const slides_sec3 = document.querySelector('.Slider_hj');
-// const slide_sec3 = document.querySelectorAll('.Slider_hj li');
-// const currentIdx_sec3 = 0;
-// const slideCount_sec3 = slide.length;
-// const slideWidth_sec3 = 25;
-// prevBtn_sec3 = document.querySelector('.prev_hj');
-// nextBtn_sec3 = document.querySelector('.next_hj');
-
-// makeClone_sec3();
-
-// function makeClone_sec3() { 
-//   for (let i = 0; i<slideCount_sec3; i++) {
-//       // a.cloneNode(), a.cloneNode(true)
-//       let cloneSlide_sec3 = slide[i].cloneNode(true);
-//       cloneSlide_sec3.classList.add('clone');
-//       //a.appendChild(b)
-//       slides_sec3.appendChild(cloneSlide);
-//   }
-//   for (let i = slideCount_sec3 - 1; i>=0; i--) {
-//       let cloneSlide_sec3 = slide[i].cloneNode(true);
-//       cloneSlide_sec3.classList.add('clone');
-//       //a.prepend(b)
-//       slides_sec3.prepend(cloneSlide_sec3);
-//   }
-//   // ul의 넓이를 지정하기 위해 새로운 함수 호출
-//   updateWidth_sec3();
-//   // 초기 위치 함수
-//   setInitialPos_sec3(); 
-
-//   setTimeout_sec3(function (){
-//     slides.classList.add('animated');
-//   },100);
-// }
-
-// function updateWidth_sec3() { 
-//   // 새로 복사된 li들 까지 모두 부른 후 그 길이를 
-//   // newSlideCount 변수에 넣는다.
-//   let currentSlides_sec3 = document.querySelectorAll('.Slider_hj li');
-//   let newSlideCount_sec3 = currentSlides_sec3.length;
-//   // 그다음의 슬라이더 갯수만큼 넓이를 구한뒤 ul 넓이 지정
-//   let newWidth_sec3 = slideWidth_sec3 * newSlideCount_sec3 + `%`;
-//   slides_sec3.style.width = newWidth_sec3;
-// }
-
-// function setInitialPos_sec3() {
-//   let initialTranslateValue_sec3 = -(slideWidth_sec3 * slideCount_sec3);
-//   // slides ( transform: translateX(-값%))
-//   slides_sec3.style.transform = `translateX(-33.28%)`;
-//   console.log(slides_sec3.style.transform);
-// }
-
-// nextBtn_sec3.addEventListener('click', function(){
-//   moveSlide(currentIdx_sec3 + 1); 
-// });
-// nextBtn_sec3.addEventListener('click', function(){
-//   moveSlide(currentIdx_sec3 - 1); 
-// });
-
-// function moveSlide_sec3(num){
-//   slides_sec3.style.left = -num * slideWidth_sec3 + '%';
-//   currentIdx_sec3 = num;
-// }
-
 const sWrap = document.getElementById('SliderWrap_hj');
 const sList = document.querySelector('.Slider_hj');
 const list = sList.querySelectorAll('li');
 const btn = document.querySelectorAll('#btnWrap_hj button');
 
-let sNum = 0;
+let sNum = 12.5;
 let state = 1;
-
+sList.prepend(list[7]);
+sList.style.transform = `translateX(-${sNum}%)`
 let nextSlider = ()=> {
-    sNum += 25;
     sList.style.transition = '1s';
-    sList.style.transform = `translateX(-${sNum}%)`;
-    sList.appendChild(list[0]);
-   
-}
-let prevSlider = ()=> {
-    sNum -= 10;
-    sList.style.transition = '1s';
+    sNum += 12.5;
     sList.style.transform = `translateX(-${sNum}%)`;
     setTimeout(()=>{
-      if ( sNum == 0 && state == 0 ) {
+      if ( sNum == 50 ) {
         sList.style.transition = '0s';
-        sList.style.transform = `translateX(-${60}%)`;
-        sNum = 60;
+        const newSliderList = sList.querySelectorAll('.Slider_hj li');
+        sList.append(newSliderList[0]);
+        sNum =37.5;
+        sList.style.transform = `translateX(-${sNum}%)`;
+      }
+      state = 1;
+    }, 1000)
+}
+let prevSlider = ()=> {
+  sList.style.transition = '1s';
+    sNum -= 12.5;
+    sList.style.transform = `translateX(-${sNum}%)`;
+    setTimeout(()=>{
+      if ( sNum == 0 ) {
+        sList.style.transition = '0s';
+        const newSliderList = sList.querySelectorAll('.Slider_hj li');
+        sList.prepend(newSliderList[7]);
+        sNum = 12.5;
+        sList.style.transform = `translateX(-${sNum}%)`;
       }
       state = 1;
     }, 1000)
 }
 
-// let timer = setInterval(nextSlider, 3000);
+let timer = setInterval(nextSlider, 2500);
 
 btn[1].addEventListener('click', ()=> {
   clearInterval(timer);
-  if ( state == 1) {
-    state = 0;
-    nextSlider();
-  }
+    if ( state == 1) {
+      state = 0;
+      nextSlider();
+    }
 })
 btn[0].addEventListener('click', ()=> {
-  clearInterval(timer)
-  if ( state == 1 ) {
-    state = 0;
-    prevSlider();
-  }
+  clearInterval(timer);
+    if ( state == 1 ) {
+      state = 0;
+      prevSlider();
+    }
 })
 
 
