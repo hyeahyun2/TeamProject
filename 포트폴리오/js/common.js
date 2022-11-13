@@ -31,28 +31,37 @@ mobile.addEventListener('click', function(){
 
 /*섹션2 슬라이더*/
 function pcSlider_sh() {
-  $('.PCSlider1_sh').append($('.PCSlider1_sh li:first')).css({'opacity':0}).animate({'opacity':1},2000)
+  $('.PCSlider1_sh li:first').css({'opacity':0}).animate({'opacity':1},1000, function(){
+    $('.PCSlider1_sh').append($('.PCSlider1_sh li:first').css({'opacity':0}).animate({'opacity':1},1000))
+  })
+
+  state_sh=1;
 }
 function mSlider_sh() {
-  $('.MSlider_sh').append($('.MSlider_sh li:first')).css({'opacity':0}).animate({'opacity':1},2000)
+  $('.MSlider_sh li:first').css({'opacity':0}).animate({'opacity':1},1000, function(){
+    $('.MSlider_sh').append($('.MSlider_sh li:first').css({'opacity':0}).animate({'opacity':1},1000))
+  })
 }
 
-let pcpc = setInterval(pcSlider_sh,2000);
-let mbmb = setInterval(mSlider_sh,2000);
+let pcpc = setInterval(pcSlider_sh,1000);
+let mbmb = setInterval(mSlider_sh,1000);
 
 /*슬라이더 버튼 */
 const pcBtn_sh = document.querySelector('.PCBtn_sh')
 const mBtn_sh = document.querySelector('.MBtn_sh')
 
+
+
 $('.PCBtn_sh').on('click',function(){
+  state_sh=0;
   clearInterval(pcpc);
-  pcSlider_sh();
-  pcpc = setInterval(pcSlider_sh,2000);
+  $('.PCSlider1_sh').append($('.PCSlider1_sh li:first').stop().css({'opacity':0}).animate({'opacity':1}))
+  pcpc = setInterval(pcSlider_sh,1000);
 })
 $('.MBtn_sh').on('click',function(){
   clearInterval(mbmb);
-  mSlider_sh();
-  mbmb =setInterval(mSlider_sh,2000);;
+  $('.MSlider_sh').append($('.MSlider_sh li:first').stop().css({'opacity':0}).animate({'opacity':1}))
+  mbmb =setInterval(mSlider_sh,1000);;
 })
 
 
