@@ -59,7 +59,7 @@ function pcSlider_sh () {
   setTimeout(function o (){
     PCSlider_sh[List_sh].style.opacity = 1;
     List_sh++;
-    if(List_sh == 4) List_sh=0;
+    if(List_sh == 5) List_sh=0;
   },1)
 }
 
@@ -69,7 +69,7 @@ function mSlider_sh () {
   setTimeout(function p (){
     MSlider[List_mb].style.opacity = 1;
     List_mb++;
-    if(List_mb == 4) List_mb=0;
+    if(List_mb == 5) List_mb=0;
   },1)
 }
   
@@ -101,7 +101,7 @@ pcBtn_sh.addEventListener('click', function(){
   setTimeout(function (){
     PCSlider_sh[List_sh].style.opacity = 1;
     List_sh++;
-    if(List_sh == 4) List_sh=0;
+    if(List_sh == 5) List_sh=0;
   },1)
   pcpc = setInterval(pcSlider_sh,3000);
 })
@@ -113,7 +113,7 @@ mBtn_sh.addEventListener('click', function(){
   setTimeout(function (){
     MSlider[List_mb].style.opacity = 1;
     List_mb++;
-    if(List_mb == 4) List_mb=0;
+    if(List_mb == 5) List_mb=0;
   },1)
   mbmb =setInterval(mSlider_sh,3000);
 })
