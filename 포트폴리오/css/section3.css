@@ -21,7 +21,7 @@
 }
 #headerWrap_hj .Header_hj {
   font-size: 40px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 #headerWrap_hj .more_hj {
   position: relative;
@@ -42,10 +42,10 @@
   position: relative;
   margin: 0 auto;
   width: 80%;
-  height: 32vh; 
+  height: 32vh;
   background-color: #ffffff;
 }
-.Slider_hj { 
+.Slider_hj {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,7 +76,7 @@
   background: #ffea97
 }
 .Slider_hj li a .title_hj { 
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: bold;
 }
 .Slider_hj li a p {
@@ -88,17 +88,17 @@
   position: absolute;
   width: 15%;
   height: 100%;
-} 
+}
 #btnWrap_hj .prev_hj { 
-  top: 0; 
+  top: 0;
   left: -15%;
   border-radius: 150px 0 0 150px;
-  background-color: #59baff; 
+  background-color: #59baff;
 }
-#btnWrap_hj .next_hj { 
-  top: 0; 
+#btnWrap_hj .next_hj {
+  top: 0;
   right: -15%;
-  border-radius: 0 150px 150px 0; 
-  background-color: #ff7a7a; 
+  border-radius: 0 150px 150px 0;
+  background-color: #ff7a7a;
 }
 
