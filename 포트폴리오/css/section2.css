@@ -151,6 +151,7 @@
     height: 365px;
     border-radius: 50px;
     background-size: cover;
+    transition:1s;
     
 
 }
@@ -266,6 +267,7 @@
     background-position: right;
     z-index:2;
     border-radius: 65px 65px 0 0;
+    transition:1s;
 }
 .MSlider1{
     background-image: url(../sh_images/m1.png);
