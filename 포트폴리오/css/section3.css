@@ -44,6 +44,7 @@
   width: 80%;
   height: 32vh; 
   background-color: #ffffff;
+  overflow: hidden;
 }
 .Slider_hj { 
   position: absolute;
