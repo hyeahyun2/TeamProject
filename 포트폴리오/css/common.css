@@ -290,25 +290,25 @@ div#headerWrap.enabled ul > li > a {
   height: 100vh;
 }
 .page1 {
-  background-color: red;
+  /* background-color: red; */
 }
 .page2 {
   /* background-color: orange; */
 }
 .page3 {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .page4 {
-  background-color: green;
+  /* background-color: green; */
 }
 .page5 {
-  background-color: blue;
+  /* background-color: blue; */
 }
 .page6 {
-  background-color: coral;
+  /* background-color: coral; */
 }
 .page7 {
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 /* footer */
