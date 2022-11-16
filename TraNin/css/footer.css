@@ -52,7 +52,7 @@
 
 }
 #membersWrap{
-    width: 380px;
+    width: 450px;
     height: 43px;
     display: flex;
     flex-direction: row;
@@ -62,8 +62,8 @@
 
 }
 .member_sh{
-    width: 70px;
-    height: 40px;
+    /* width: 70px;
+    height: 40px; */
 
 }
 .member_sh a{
@@ -75,6 +75,12 @@
     font-weight: bold;
     color: gray;
     
+}
+#membersWrap p.member0_sh a{
+    width: 140px;
+    height: 40px;
+    color:goldenrod;
+
 }
 .member1_sh{
 
