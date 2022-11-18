@@ -156,24 +156,24 @@
 
 }
 .PCSlider1{
-    background-image:url(../sh_images/pc1.png);
-
+    background-image:url(../sh_images/dummy1.jpeg);
+    background-position: center;
 }
 .PCSlider2{
-    background-image:url(../sh_images/pc2.png);
-
+    background-image:url(../sh_images/dummy2.jpeg);
+    background-position: center;
 }
 .PCSlider3{
-    background-image:url(../sh_images/pc3.png);
-
+    background-image:url(../sh_images/dummy3.jpeg);
+    background-position: center;
 }
 .PCSlider4{
-    background-image:url(../sh_images/pc4.png);
-
+    background-image:url(../sh_images/dummy4.jpeg);
+    background-position: center;
 }
 .PCSlider5{
-    background-image:url(../sh_images/pc5.png);
-
+    background-image:url(../sh_images/dummy5.jpeg);
+    background-position: center;
 }
 #mobileNotice{
     width: 200px;
@@ -270,22 +270,23 @@
     transition:1s;
 }
 .MSlider1{
-    background-image: url(../sh_images/m1.png);
+    background-image: url(../sh_images/dummy1.jpeg);
+    object-position: center;
 
 }
 .MSlider2{
-    background-image: url(../sh_images/m2.png);
-
+    background-image: url(../sh_images/dummy2.jpeg);
+    background-position: center;
 }
 .MSlider3{
-    background-image: url(../sh_images/m3.png);
-
+    background-image: url(../sh_images/dummy3.jpeg);
+    background-position: center;
 }
 .MSlider4{
-    background-image: url(../sh_images/m4.png);
-
+    background-image: url(../sh_images/dummy4.jpeg);
+    background-position: center;
 }
 .MSlider5{
-    background-image: url(../sh_images/m5.png);
-
+    background-image: url(../sh_images/dummy5.jpeg);
+    background-position: center;
 }
