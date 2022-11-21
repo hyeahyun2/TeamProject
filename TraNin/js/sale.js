@@ -47,7 +47,7 @@ function moreList(){
   }
 }
 
-// window.addEventListener("load", moreList)
-// moreBtn.addEventListener("click", moreList);
+window.addEventListener("load", moreList)
+moreBtn.addEventListener("click", moreList);
 
 
