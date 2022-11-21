@@ -20,6 +20,7 @@ const moreBtn = contentWrap.querySelector(".moreBtn");
 
 // const postUl = posts.querySelector("ul");
 let clickNum = 0;
+// ajax 사용
 function moreList(){
   // page = this.getAttribute();
   xhr.open('GET', `./saleList.html`); //HTTP 요청 초기화. 통신 방식과 url 결정
@@ -45,5 +46,8 @@ function moreList(){
     }
   }
 }
-window.addEventListener("load", moreList)
-moreBtn.addEventListener("click", moreList);
+
+// window.addEventListener("load", moreList)
+// moreBtn.addEventListener("click", moreList);
+
+
