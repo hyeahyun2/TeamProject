@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 
-
 .onX{
     transition:1s;
     transform: scale(1.3);
@@ -13,13 +12,17 @@
 .footerWrap{
     width: 100%;
     height: 25vh;
+    padding-bottom: 25vh;
+    position:relative;
    
-
 }
 #footer{
     width: 1000px;
     height: 25vh;
-    margin:0 auto;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%);
 
 }
 #footer .us{
@@ -34,7 +37,7 @@
     margin: 0 auto;
     font-style: italic;
     text-shadow: 1px 1px 0px black;
-    position:relative
+    position:relative;
 }
 
 #footer .us::before{
