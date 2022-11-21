@@ -43,11 +43,17 @@
 }
 .thead_hj td { 
   padding: 10px;
-  background-color: #fd9191;
+  background-color: #ffb0b0;
+  font-weight: bold;
+  color: #4f4f4f;
 }
 .tbody_hj td {
   padding: 10px;
-  border-bottom: 2px solid #ffd4a8;
+  border-bottom: 2px solid #ffeddb;
+  color: #828282;
+}
+.tbody_hj td a {
+  color: #828282;
 }
 .tbody_hj td a:hover { 
   background-color: #6a625d;
@@ -56,9 +62,30 @@
 }
 
 #pagingWrap_hj {
+  margin: 50px 0 250px 0;
 }
 #pagingWrap_hj .pagingUl_hj {
   display: flex;
+  justify-content: center;
+}
+
+#pagingWrap_hj .pagingUl_hj li {
+  padding: 5px;
+}
+
+#pagingWrap_hj .pagingUl_hj li a {
+  display: block; 
+  /* width: 30px;
+  height:30px; */
+  border: 3px solid #fffca4;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+#pagingWrap_hj .pagingUl_hj li .num {
+  width: 45px;
+  height: 45px;
+  text-align: center;
 }
 
 
