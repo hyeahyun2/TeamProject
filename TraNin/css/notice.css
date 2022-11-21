@@ -27,6 +27,7 @@
   border-radius: 30px;
 }
 #headerWrap_hj p input{
+  outline: none;
   margin-left: 20px;
   font-size: 16px;
   border-style: none;
