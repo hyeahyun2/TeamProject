@@ -12,13 +12,13 @@
 }
 .footerWrap{
     width: 100%;
-    height: 120px;
+    height: 25vh;
    
 
 }
 #footer{
     width: 1000px;
-    height: 120px;
+    height: 25vh;
     margin:0 auto;
 
 }
