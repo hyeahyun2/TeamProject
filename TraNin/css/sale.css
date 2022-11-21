@@ -8,8 +8,8 @@ body{
   position:relative;
 }
 .footerWrap{
- position:absolute;
- bottom:0;
+  position:absolute;
+  bottom:0;
 }
 #upperSmallNav { 
   /* transform: translate(-15%, -80%); */
@@ -89,6 +89,7 @@ body{
   text-indent: -10000px;
   display: block;
   width: 100%; height: 20vw;
+  max-height: 260px;
   border: 1px solid #c7c7c7;
   background-color: #fff;
 }

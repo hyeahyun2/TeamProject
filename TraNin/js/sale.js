@@ -1,16 +1,3 @@
-// const contentWrap = document.getElementById("contentWrap");
-// array list 클릭시 해당 리스트 표시 / 나열
-const array = document.getElementById("array");
-const arrList = array.querySelectorAll("li");
-arrList.forEach(element => {
-  element.addEventListener("click",(e)=>{
-    for(let i=0; i<arrList.length; i++){
-      arrList[i].classList.remove("select");
-    }
-    e.currentTarget.classList.add("select");
-  })
-});
-
 // 더보기 클릭시 리스트 추가
 const xhr = new XMLHttpRequest();
 
@@ -51,3 +38,18 @@ window.addEventListener("load", moreList)
 moreBtn.addEventListener("click", moreList);
 
 
+// array list 클릭시 해당 리스트 표시 / 나열
+const array = document.getElementById("array");
+const arrList = array.querySelectorAll("li");
+arrList.forEach(element => {
+  element.addEventListener("click",(e)=>{
+    for(let i=0; i<arrList.length; i++){
+      arrList[i].classList.remove("select");
+    }
+    e.currentTarget.classList.add("select");
+    // 리스트 초기화 및 다시 불러오기
+    posts.innerHTML = null;
+    clickNum = 0;
+    moreList();
+  })
+});
