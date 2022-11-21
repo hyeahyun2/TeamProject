@@ -4,8 +4,13 @@ body{
 }
 #wrap_sh{
   min-height: 100%;
+  padding-bottom:25vh;
+  position:relative;
 }
-
+.footerWrap{
+ position:absolute;
+ bottom:0;
+}
 #upperSmallNav { 
   /* transform: translate(-15%, -80%); */
   position: fixed;
