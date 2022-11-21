@@ -1,4 +1,24 @@
 @charset "utf-8";
+#upperSmallNav { 
+    /* transform: translate(-15%, -80%); */
+    position: fixed;
+}
+  #headerWrap {
+    background-color: #fff;
+    top: 0; z-index: 98;
+    border-bottom: 1px solid #ededed;
+}
+  #header .logo {
+    top: 0;
+}
+  #header .logo a {
+    top: 0;
+}
+  #gnbList {
+    margin-top: 20px;
+}
+
+
 
 body{
     width: 100%;
