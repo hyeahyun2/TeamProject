@@ -33,7 +33,8 @@ body{
 /******************************************/
 
 #content {
-  width: 100%; height: 100vh;
+  width: 100%; 
+  /* height: 100vh; */
   max-width: 1390px;
   position: relative;
   top: 120px; /* = header height */
@@ -82,11 +83,12 @@ body{
 }
 .post {
   width: 23%; height: 48%;
+  margin: 10px 0;
 }
 .post .postImg {
   text-indent: -10000px;
   display: block;
-  width: 100%; height: 65%;
+  width: 100%; height: 20vw;
   border: 1px solid #c7c7c7;
   background-color: #fff;
 }
