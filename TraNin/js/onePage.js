@@ -7,6 +7,14 @@
    mouse_is_not_in_post_sec4 = true;
  });
 
+ let right_quick_bar_activate = false;
+ rightSearch.addEventListener("click", function () {
+   right_quick_bar_activate = true;
+ });
+ rightSearchClose.addEventListener("click", function () {
+   right_quick_bar_activate = false;
+ });
+
  let wheelParam = 0;
  let param = 1;
  let leftPageCounting = 0;
@@ -14,7 +22,7 @@
  let nWheel = 1;
  let stateW = 1;
  let wheeling = (e) => {
-   if (e.wheelDelta < 0 && stateW == 1 && mouse_is_not_in_post_sec4==true) {
+   if (e.wheelDelta < 0 && stateW == 1 && mouse_is_not_in_post_sec4==true && right_quick_bar_activate == false) {
      stateW = 0;
      nWheel++;
      if (nWheel > 6) {
@@ -38,7 +46,7 @@
          headerLeftNavBar.style.height = `${24 * (nWheel)}px`;
        }
      }
-   } else if (e.wheelDelta > 0 && stateW == 1 && mouse_is_not_in_post_sec4==true) {
+   } else if (e.wheelDelta > 0 && stateW == 1 && mouse_is_not_in_post_sec4==true && right_quick_bar_activate == false) {
      stateW = 0;
      nWheel--;
      if (nWheel < 1) {
