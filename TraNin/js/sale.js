@@ -1,13 +1,11 @@
 // 더보기 클릭시 리스트 추가
+// ajax 사용
 const xhr = new XMLHttpRequest();
-
 const contentWrap = document.getElementById("contentWrap");
 const posts = document.getElementById("posts");
 const moreBtn = contentWrap.querySelector(".moreBtn");
 
-// const postUl = posts.querySelector("ul");
-let clickNum = 0;
-// ajax 사용
+let clickNum = 0; // 클릭 수
 function moreList(){
   // page = this.getAttribute();
   xhr.open('GET', `./saleList.html`); //HTTP 요청 초기화. 통신 방식과 url 결정
@@ -19,10 +17,10 @@ function moreList(){
     console.log(xhr.status, xhr.statusText);
     if(xhr.status === 200){ // 서버(url)에 문서가 존재할 때
       posts.insertAdjacentHTML("beforeend", xhr.response);
-      const postUl = posts.querySelectorAll("ul");
+      const postUl = posts.querySelectorAll("ul"); // 현재 ul태그들 변수에 저장
       clickNum++;
-      posts.style.height = `${80 * clickNum}%`;
-      postUl.forEach(element =>{
+      posts.style.height = `${80 * clickNum}%`; // ul 부모태그 높이 늘리기
+      postUl.forEach(element =>{ // ul태그들 높이 조절
         element.style.height = `${100 / clickNum}%`
       })
       // postUl.style.height = `${100 / clickNum}%`
@@ -33,20 +31,20 @@ function moreList(){
     }
   }
 }
+window.addEventListener("load", moreList); // 페이지 로드시 디폴트 리스트
+moreBtn.addEventListener("click", moreList); // 클릭시 리스트 추가
 
-window.addEventListener("load", moreList)
-moreBtn.addEventListener("click", moreList);
 
-
-// array list 클릭시 해당 리스트 표시 / 나열
+// 정렬 방식(#array)에 따른 리스트 재나열
 const array = document.getElementById("array");
 const arrList = array.querySelectorAll("li");
+
 arrList.forEach(element => {
   element.addEventListener("click",(e)=>{
     for(let i=0; i<arrList.length; i++){
       arrList[i].classList.remove("select");
     }
-    e.currentTarget.classList.add("select");
+    e.currentTarget.classList.add("select"); // 선택된 정렬방식 표시
     // 리스트 초기화 및 다시 불러오기
     posts.innerHTML = null;
     clickNum = 0;
