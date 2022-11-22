@@ -1,16 +1,5 @@
 @charset "utf-8";
-body{
-  height:100%;
-}
-#wrap_sh{
-  min-height: 100%;
-  padding-bottom:25vh;
-  position:relative;
-}
-.footerWrap{
-  position:absolute;
-  bottom:0;
-}
+
 #upperSmallNav { 
   /* transform: translate(-15%, -80%); */
   position: fixed;
@@ -35,6 +24,7 @@ body{
 #content {
   width: 100%; 
   /* height: 100vh; */
+  max-height: 100vh; /*위에 주석 풀거나 이거 달면 되지 않을까용...?*/
   max-width: 1390px;
   position: relative;
   top: 120px; /* = header height */
