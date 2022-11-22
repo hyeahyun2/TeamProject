@@ -28,8 +28,10 @@
 
 
  /* 검색창 */
- rightSearch.addEventListener("click",function(){
+ rightSearch.addEventListener("click",function(e){
+  e.preventDefault();
    rightSearchPage.classList.add("active");
+   rightSearchPage.style.top = `${window.pageYOffset}px`;
    upperSmallNav.style.opacity=0;
    rightQuickMenu.style.opacity=0;
    headerLeftNav.style.opacity=0;
