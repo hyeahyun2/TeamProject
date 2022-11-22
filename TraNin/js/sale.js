@@ -1,3 +1,12 @@
+const fixedBtn = document.getElementById("fixedBtn");
+const topBtn = fixedBtn.querySelector(".topBtn");
+console.log(topBtn);
+topBtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+  // 스크롤 스무스하게 올라가게
+  window.scrollTo({top: 0, behavior: 'smooth'});
+})
+
 // 더보기 클릭시 리스트 추가
 // ajax 사용
 const xhr = new XMLHttpRequest();
