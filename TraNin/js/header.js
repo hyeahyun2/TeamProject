@@ -13,6 +13,7 @@
   });
 
  //header left/right Side
+ const body = document.querySelector("body");
  const headerLeftNav = document.querySelector(".leftNav");
  const headerLeftNavUl = document.querySelector(".count");
  const headerLeftNavLi = document.querySelectorAll(".count > li");
@@ -30,6 +31,7 @@
  /* 검색창 */
  rightSearch.addEventListener("click",function(e){
   e.preventDefault();
+  body.style.overflow = "hidden";
    rightSearchPage.classList.add("active");
    rightSearchPage.style.top = `${window.pageYOffset}px`;
    upperSmallNav.style.opacity=0;
@@ -38,7 +40,8 @@
    headerWrap.style.opacity=0;
  });
  rightSearchClose.addEventListener("click",function(){
-   rightSearchPage.classList.remove("active");
+  body.style.overflow = "scroll";
+  rightSearchPage.classList.remove("active");
    upperSmallNav.style.opacity=1;
    rightQuickMenu.style.opacity=1;
    headerLeftNav.style.opacity=1;
