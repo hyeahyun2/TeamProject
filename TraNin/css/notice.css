@@ -7,6 +7,7 @@
   position: relative;
   top: 150px;
   margin: 0 auto;
+  padding-bottom: 25vh; 
 }
 #headerWrap_hj { 
   padding: 50px;
@@ -18,7 +19,7 @@
   font-size: 40px;
   border-bottom: 2px solid #000;
 }
-#headerWrap_hj p {
+#headerWrap_hj form {
   width: 500px;
   height: 50px;
   padding-top: 13px;
@@ -26,7 +27,7 @@
   background-color: #dbdbdb;
   border-radius: 30px;
 }
-#headerWrap_hj p input{
+#headerWrap_hj form input{
   outline: none;
   margin-left: 20px;
   font-size: 16px;
@@ -37,7 +38,6 @@
 #board_hj { }
 #board_hj .table_hj {
   width: 100%;
-  
   font-size: 18px;
   text-align: center;
   border-collapse: collapse;
@@ -63,7 +63,7 @@
 }
 
 #pagingWrap_hj {
-  margin: 50px 0 250px 0;
+  margin: 50px 0;
 }
 #pagingWrap_hj .pagingUl_hj {
   display: flex;
