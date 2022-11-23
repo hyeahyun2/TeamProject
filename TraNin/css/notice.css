@@ -15,12 +15,7 @@ div#headerWrap ul > li > a {
   position: relative;
   top: 150px;
   margin: 0 auto;
-<<<<<<< HEAD
   padding-bottom: 25vh; 
-=======
-  padding-bottom:25vh;
-  
->>>>>>> decbf66 (이게 뭐였더라)
 }
 #headerWrap_hj { 
   padding: 50px;
