@@ -7,8 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/login-nav.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/header.js" defer></script>
+    <script src="./js/login.js"></script>
 </head>
 <body>
     <div id="upperSmallNav">
@@ -19,6 +21,7 @@
       </div>
       <div id="headerWrap">
         <header id="header">
+          <h1 class="logo"><a href="./index.html">logo</a></h1>
           <nav id="gnb">
             <h2 class="hidden">주요이용메뉴</h2>
             <ul id="gnbList">
@@ -43,22 +46,33 @@
           </nav>
         </header>
       </div>
-      <div id="login">
+    <div id="loginWrap_sh">
+      <div id="login_sh">
         <h1>회원가입</h1>
         <form action="#">
-            <ul>
-                <li>아이디<input type="text"></li>
-                <li>비밀번호<input type="password"></li>
-                <li>자동 로그인<input type="checkbox"></li>
-                <li>아이디 저장<input type="checkbox"></li>
-                <li>로그인<input type="button"></li>           
+          <div id="listWrap_sh">
+            <ul id="list_sh">
+                <li><span>아이디</span><input type="text" placeholder=" 아이디"></li>
+                <li><span>비밀번호</span><input type="password" placeholder=" 비밀번호"></li>
+                <div id="check_sh"></div>
+                <div id="checkBox_sh">
+                <li>자동 로그인 <input type="checkbox"></li>
+                <li>아이디 저장 <input type="checkbox"></li>
+              </div>
+                <li><span>로그인</span><input type="button" value="로그인"></li>           
             </ul>
+          </div>
         </form>
+        <div id="linkList_sh">
         <a href="#">로그인/비밀번호 찾기</a>                
-        <a href="#">회원가입</a>               
-        <div></div>  
-        <div></div>
+        <a href="#">회원가입</a>    
+      </div>   
+      <div id="alterLogin_sh">
+        <div id="naver_sh">네이버 로그인</div>  
+        <div id="kakao_sh">카카오 로그인</div>
+      </div>   
       </div>
+    </div>
       <div class="footerWrap page onePage6">
         <footer class="page8" id="footer">
           <p class="us">about us</p>
