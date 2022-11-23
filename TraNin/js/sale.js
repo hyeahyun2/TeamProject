@@ -60,3 +60,17 @@ arrList.forEach(element => {
     moreList();
   })
 });
+
+
+// category 선택
+const category = document.getElementById("category");
+const goryPTag = category.querySelector("p");
+const goryList = category.querySelector(".goryList");
+goryPTag.addEventListener("mouseenter",()=>{
+  goryList.style.height = "115px";
+  goryList.style.border = "1px solid #000";
+})
+category.addEventListener("mouseleave", ()=>{
+  goryList.style.height = 0;
+  goryList.style.border = "unset";
+})
