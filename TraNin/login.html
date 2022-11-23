@@ -49,17 +49,17 @@
     <div id="loginWrap_sh">
       <div id="login_sh">
         <h1>회원가입</h1>
-        <form action="#">
+        <form action="#" name="member_insert">
           <div id="listWrap_sh">
             <ul id="list_sh">
-                <li><span>아이디</span><input type="text" placeholder=" 아이디"></li>
-                <li><span>비밀번호</span><input type="password" placeholder=" 비밀번호"></li>
+                <li><span>아이디</span><input type="text" placeholder=" 아이디" name="memberId" id="id_sh"></li>
+                <li><span>비밀번호</span><input type="password" placeholder=" 비밀번호" name="password" id="password_sh"></li>
                 <div id="check_sh"></div>
                 <div id="checkBox_sh">
                 <li>자동 로그인 <input type="checkbox"></li>
                 <li>아이디 저장 <input type="checkbox"></li>
               </div>
-                <li><span>로그인</span><input type="button" value="로그인"></li>           
+                <li><span>로그인</span><input type="button" value="로그인" onClick="submit()"></li>           
             </ul>
           </div>
         </form>
