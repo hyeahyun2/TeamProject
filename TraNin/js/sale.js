@@ -66,11 +66,25 @@ arrList.forEach(element => {
 const category = document.getElementById("category");
 const goryPTag = category.querySelector("p");
 const goryList = category.querySelector(".goryList");
+const goryItem = goryList.querySelectorAll("li");
+console.log(goryItem);
 goryPTag.addEventListener("mouseenter",()=>{
-  goryList.style.height = "115px";
+  category.style.height = "170px";
   goryList.style.border = "1px solid #000";
 })
-category.addEventListener("mouseleave", ()=>{
-  goryList.style.height = 0;
+category.addEventListener("mouseleave", (e)=>{
+  e.currentTarget.style.height = "25px";
   goryList.style.border = "unset";
 })
+
+goryItem.forEach(element => {
+  element.addEventListener("click",(e)=>{
+    let pTagText = e.currentTarget.innerText;
+    goryPTag.innerText = element.innerText;
+    element.innerText = pTagText;
+    // 리스트 초기화 및 다시 불러오기
+    posts.innerHTML = null;
+    clickNum = 0;
+    moreList();
+  })
+});
