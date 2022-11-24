@@ -1,0 +1,48 @@
+@charset "UTF-8";
+#upperSmallNav {
+  background-color: darkgray;
+}
+div#headerWrap ul > li > a {
+  color : black;
+}
+#myPageProfile {
+  max-width: 1390px;
+  width: 100%;
+  height: 300px;
+  margin: 200px auto 0 auto;
+}
+#myPageProfile img {
+  width : 200px;
+  height : 200px;
+}
+#myPageProfile div {
+  display : flex;
+  flex-flow: row;
+}
+#myPageContent, #myPageTab{
+  max-width: 1390px;
+  width: 100%;
+  margin: 0 auto;
+}
+#myPageTab ul {
+  display : flex;
+  width : 100%;
+  justify-content: space-around;
+}
+#myPageTab ul li {
+  width : 100%;
+  height : 40px;
+  padding-top: 6px;
+  border : 1px solid black;
+  text-align: center;
+}
+#myPageTab ul li.active {
+  background-color: coral;
+}
+#myPageTab h2 {
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+#myPageContent {
+  border : 1px solid black;
+}
