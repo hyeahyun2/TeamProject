@@ -32,12 +32,13 @@ ul.faqUl_hj {
   padding: 30px 50px;
   background: #bfedff;
   text-indent: 20px;
-  box-shadow: 0px 0px 50px #35c9ff;
+  animation: lightening 1s alternate infinite; 
 }
 li.group_hj {
   margin: 10px 0;
 }
 div.question_hj { 
+  position: relative;
   height: 70px;
   line-height: 70px;
   background: #2e5677;
@@ -46,17 +47,67 @@ div.question_hj {
   font-weight: bold;
   color: #fff;
 }
+div.question_hj span { 
+  position: absolute;
+  transition: all 0.5s;
+  background: #f4aaff;
+}
+
+div.question_hj span:nth-child(1) {
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 3px;
+}
+div.question_hj:hover span:nth-child(1) {
+  width: 100.1%;
+}
+div.question_hj span:nth-child(2) {
+  top: 0;
+  right: -1px;
+  width: 3px;
+  height: 0; 
+}
+div.question_hj:hover span:nth-child(2) {
+  height: 101%; 
+}
+div.question_hj span:nth-child(3) {
+  bottom: -1px;
+  right: -1px;
+  width: 0;
+  height: 3px;
+}
+div.question_hj:hover span:nth-child(3) {
+  width: 100.1%;
+}
+
+div.question_hj span:nth-child(4) {
+  bottom: 1px;
+  left: -1px;;
+  width: 3px;
+  height: 0;
+}
+div.question_hj:hover span:nth-child(4) {
+  bottom: 0;
+  left: -1px;
+  width: 3px;
+  height: 101%; 
+}
 ul.sub_hj li { 
-  height: 70px;
   margin-bottom: 2px;
   line-height: 70px;
   border: 1px solid #c8c8c8;
   background: #444444;
   font-size: 18px;
   color: #fff;
+  word-wrap:break-word;
 }
 
+@keyframes lightening {
+  0% { box-shadow: 0px 0px 25px #35c9ff; }
+  100% { box-shadow: 0px 0px 50px #35c9ff; }
 
+}
 
 
 
