@@ -4,7 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>팝니다</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/salePost.css">
+  <script src="./js/header.js" defer></script>
+  <title>판매글제목</title>
 </head>
 <body>
   <!-- header -->
@@ -44,10 +54,40 @@
 
   <!-- contents -->
   <div id="content">
-    <h1><span>팝니다</span></h1>
-    <div id="postContent">
-      <div class="postImg"></div>
-      <div class="postInfo"></div>
+    <h1><a href="./sale.html">팝니다</a></h1>
+    <div id="contentWrap">
+      <div class="postImg">
+        <div class="mainImg">
+          <img src="#" alt="상품이미지1">
+        </div>
+        <ul>
+          <!-- 상품 이미지 개수 유동적으로 변화 -->
+          <li class="checkImg"><img src="#" alt="상품이미지1"></li>
+          <li><img src="#" alt="상품이미지2"></li>
+          <li><img src="#" alt="상품이미지3"></li>
+          <li><img src="#" alt="상품이미지4"></li>
+          <li><img src="#" alt="상품이미지5"></li>
+        </ul>
+      </div>
+      <div class="postInfo">
+        <div class="category">
+          <a href="#">카테고리명</a>
+          <a href="#">상품명</a>
+        </div>
+        <h2>판매글제목</h2>
+        <p>2022년 11월 26일 13:22</p>
+        <p>가격 : <span class="price">20000원</span></p>
+        <div class="mainText">
+          <p>판매글 내용 입니다!!!</p>
+          <p>여러줄 작성 가능합니다!!!</p>
+        </div>
+        <ul class="saleBtn">
+          <li><a href="#">찜하기</a></li>
+          <li><a href="#">채팅</a></li>
+          <li><a href="#">장바구니</a></li>
+          <li><a href="#">바로구매</a></li>
+        </ul>
+      </div>
     </div>
     <ul id="sellerBtn">
       <li><a>끌올</a></li>
@@ -56,8 +96,8 @@
     </ul>
   </div>
   <div id="PageBtn">
-    <a href="#">이전 게시물로 이동</a>
-    <a href="#">다음 게시물로 이동</a>
+    <a class="prevBtn" href="#">이전 게시물로 이동</a>
+    <a class="nextBtn" href="#">다음 게시물로 이동</a>
   </div>
   <!-- footer -->
   <div class="footerWrap page onePage6">

@@ -69,7 +69,7 @@ const goryList = category.querySelector(".goryList");
 const goryItem = goryList.querySelectorAll("li");
 console.log(goryItem);
 goryPTag.addEventListener("mouseenter",()=>{
-  category.style.height = "170px";
+  category.style.height = "175px";
   goryList.style.border = "1px solid #000";
 })
 category.addEventListener("mouseleave", (e)=>{

@@ -19,7 +19,7 @@ div#headerWrap ul > li > a {
 #content > h1 {
   margin: 30px 50px;
 }
-#content > h1 span {
+#content > h1 > a {
   border-bottom: 2px solid #000;
 }
 #contentWrap {
@@ -81,13 +81,13 @@ div#headerWrap ul > li > a {
 }
 #category .goryList {
   position: absolute;
-  top: 22px; 
+  top: 25px; 
   width: 150px;
   color: #000;
   border-radius: 5px;
   text-align: center;
   transition: 0.5s;
-  height: 140px;
+  height: 150px;
   background-color: #fff;
   padding: 0 30px;
 }

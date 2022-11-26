@@ -7,7 +7,7 @@ body {
 
 body::-webkit-scrollbar {
   /* 스크롤바 전체 */
-    width: 8px;
+    width: 8px; height: 8px;
     background-color: #dbdbdb;
   }
   body::-webkit-scrollbar-thumb {
