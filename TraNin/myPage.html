@@ -16,6 +16,7 @@
     <script type="text/javascript" src="./js/jquery-migrate-1.4.1.min.js"></script>
     <script type="text/javascript" src="./js/jquery-ui.js"></script>
     <script src="js/header.js" defer></script>
+    <script src="js/myPage.js" defer></script>
   </head>
   <body>
     <div id="upperSmallNav">
@@ -89,14 +90,12 @@
       </section>
     </section>
     <section id="myPageProfile">
-      <h3>내 프로필</h3>
+      <h2>내 프로필</h3>
       <div>
         <img src="./image/addPic.png" alt="내 프로필 사진">
         <ul>
-          <li><p>프로필 내용1</p></li>
-          <li><p>프로필 내용2</p></li>
-          <li><p>프로필 내용3</p></li>
-          <li><p>프로필 내용4</p></li>
+          <li><input id="myPageProfileNickName" type="text" name="myPageProfileNickName" value="별명"></li>
+          <li><input id="myPageProfileIntroduce" type="text" name="myPageProfileIntroduce" value="자기소개"></li>
         </ul>
       </div>
     </section>
@@ -104,6 +103,7 @@
       <h2>마이페이지</h2>
       <ul>
         <li class="active"><a href="">내 정보</a></li>
+        <li><a href="">내 활동</a></li>
         <li><a href="">찜한 상품</a></li>
         <li><a href="">장바구니</a></li>
         <li><a href="">구매내역</a></li>
