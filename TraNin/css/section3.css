@@ -30,10 +30,10 @@
   margin: 0 auto 20px;
   display: flex;
   align-items: center;
-  background-color: #17b659;
+  background-color: #58ff9d;
 }
 #headerWrap_hj {
-  box-shadow: 0px 0px 20px #40f58b;
+  box-shadow: 0px 0px 20px #57fb9c;
 }
   
 #headerWrap_hj .Header3_hj {
@@ -59,13 +59,13 @@
   left: 50px;
 }
 #SliderWrap_hj { 
-  box-shadow: 0px 0px 25px #05dee6;
+  box-shadow: 0px 0px 25px #51f9ff;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   width: 80%;
   height: 32vh;
-  background-color: #2aa4a8;
+  background-color: #54f9ff;
 }
 .Slider_hj {
   position: absolute;

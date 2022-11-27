@@ -21,7 +21,7 @@ div#headerWrap ul > li > a {
   padding: 50px;
 }
 #faqHeaderWrap_hj h2 {
-  width: 35%;
+  width: 22%;
   font-size: 40px;
   border-bottom: 2px solid #31ffe7;
   color: #76ffef;
@@ -50,7 +50,7 @@ div.question_hj {
 div.question_hj span { 
   position: absolute;
   transition: all 0.5s;
-  background: #f4aaff;
+  background: #cb00ea;
 }
 
 div.question_hj span:nth-child(1) {
