@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/salePost.css">
   <script src="./js/header.js" defer></script>
+  <script src="./js/salePost.js" defer></script>
   <title>판매글제목</title>
 </head>
 <body>
@@ -57,16 +58,20 @@
     <h1><a href="./sale.html">팝니다</a></h1>
     <div id="contentWrap">
       <div class="postImg">
-        <div class="mainImg">
-          <img src="#" alt="상품이미지1">
-        </div>
-        <ul>
+        <ul class="mainImg">
           <!-- 상품 이미지 개수 유동적으로 변화 -->
           <li class="checkImg"><img src="#" alt="상품이미지1"></li>
           <li><img src="#" alt="상품이미지2"></li>
           <li><img src="#" alt="상품이미지3"></li>
           <li><img src="#" alt="상품이미지4"></li>
           <li><img src="#" alt="상품이미지5"></li>
+        </ul>
+        <ul class="imgBtn">
+          <li class="checkImg">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
         </ul>
       </div>
       <div class="postInfo">
@@ -89,6 +94,7 @@
         </ul>
       </div>
     </div>
+    <!-- 판매자 버튼 -->
     <ul id="sellerBtn">
       <li><a>끌올</a></li>
       <li><a>수정</a></li>
