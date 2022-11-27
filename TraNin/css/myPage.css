@@ -100,7 +100,7 @@ div#headerWrap ul > li > a {
 #myPageMyInfo,#myPageMyActivity, #myPageFavorite, #myPageBuyList, #myPageMemberOut, #myPageMemberBanned, #myPageAdmin {
   display : none;
 }
-#myPageMyActivity {
+#myPageBuyList {
   display : block;
 }
 #myPageMyInfoForm ul li {
@@ -117,7 +117,7 @@ div#headerWrap ul > li > a {
   color : white;
 }
 #myPageMyActivity {
-  display : flex;
+  /* display : flex; */
   flex-flow: row;
 }
 #myPageMyActivityLeftNavWrap {
@@ -163,4 +163,63 @@ div#headerWrap ul > li > a {
   border: 1px solid white;
   text-align: center;
   padding-bottom: 25px;
+}
+/* myPageFavorite */
+#myPageFavorite ul {
+  max-height: 450px;
+  border: 1px solid white;
+  overflow-y: scroll;
+}
+#myPageFavorite ul li{
+  border: 1px solid white;
+  min-height: 50px;
+  margin: 10px;
+}
+/* myPageBuyList */
+#myPageBuyList a{
+  color : white;
+}
+#myPageBuyListInnerWrap {
+  display : flex;
+  flex-flow: column;
+}
+#myPageBuyListInnerWrap ul {
+  display : flex;
+  flex-flow: row;
+  width : 100%;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+#myPageBuyListHeader {
+  font-size: 1.3em;
+  padding-bottom: 20px;
+}
+#myPageBuyListInnerWrap ul:not(#myPageBuyListHeader) {
+  height : 100px;
+  padding-top: 40px;
+}
+#myPageBuyListInnerWrap ul:not(#myPageBuyListHeader) {
+  transition: background 0.25s ease;
+}
+#myPageBuyListInnerWrap ul:not(#myPageBuyListHeader):hover {
+  background: #014055;
+}
+.myPageBuyListReview {
+  position: absolute;
+  right : 100px;
+  margin-top: 30px;
+  border: 1px solid white;
+}
+#myPageBuyListPaging {
+  display : flex;
+  justify-content: center;
+  margin : 10px;
+}
+#myPageBuyListPaging ul {
+  display : flex;
+  flex-flow: row;
+  margin : 0 10px;
+}
+#myPageBuyListPaging ul li {
+  margin : 0 10px;
 }
