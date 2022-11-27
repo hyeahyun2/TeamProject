@@ -94,7 +94,6 @@ div#headerWrap ul > li > a {
 }
 .postInfo .mainText > * {
   padding: 10px 0;
-  border-bottom: 1px solid #666666;
 }
 .postInfo .saleBtn {
   display: flex;
