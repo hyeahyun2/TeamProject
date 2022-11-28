@@ -44,17 +44,20 @@
   <!-- header end -->
   <section>
     <form action="">
-      신고 ID: <input type="text" name="banid" size="200">
-      <select name="" id="">신고카테고리
+      신고 ID: <input type="text" name="reportID_hj" size="200" id="">
+      <select name="category_hj" id="">신고카테고리
         <option value="팝니다">팝니다</option>
-        <option value="팝니다">삽니다</option>
-        <option value="팝니다">인기글</option>
-        <option value="팝니다">자유게시판</option>
-        <option value="팝니다">정보게시판</option>
+        <option value="삽니다">삽니다</option>
+        <option value="인기글">인기글</option>
+        <option value="자유게시판">자유게시판</option>
+        <option value="정보게시판">정보게시판</option>
       </select>
-      
+      <input type="text" name="url_hj">
+      <textarea name="textarea_hj" id="" cols="100" rows="50"></textarea>
     </form>
-
+    <div id="btnWrap_hj">
+      <button class="goReport_hj">신고하기</button>
+    </div>
   </section>
   <!-- footer start -->
   <div class="footerWrap page onePage6">
