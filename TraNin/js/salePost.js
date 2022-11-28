@@ -6,6 +6,7 @@ const imgList = imgWrap.querySelectorAll("li");
 const imgbtnList = imgBtn.querySelectorAll("li");
 
 let imgNum = 0; // 현재 이미지의 index 번호
+let state = 1; // 애니매이션 중일 때 = 0
 function imgMove(){
   imgWrap.style.transition = '0.5s';
   imgWrap.style.marginLeft = `-${imgNum * 100}%`;
@@ -37,24 +38,23 @@ imgWrap.addEventListener("mouseup", function(e){
   mouseUp = e.pageX;
   console.log("down: " + mouseDown);
   console.log("up: " + mouseUp);
-  if(mouseUp < mouseDown){ // 왼쪽으로 드래그
+  // 현재 imgList의 너비의 30%
+  let imgListPer30 = 30*(imgList[0].clientWidth/100);
+  if(mouseUp < mouseDown - imgListPer30){ // 다음 슬라이드
     console.log("left");
-    if(imgNum >= 0){
+    if(imgNum < imgList.length-1){ 
       imgNum ++;
-      imgMove();
     }
   }
-  else if(mouseUp > mouseDown){ // 오른쪽으로 드래그
+  else if(mouseUp > mouseDown + imgListPer30){ // 이전 슬라이드
     console.log("right");
-    if(imgNum < imgList.length){
+    if(imgNum > 0){
       imgNum--;
-      imgMove();
     }
   }
   else { // 드래그 폭 좁을 경우 현재 슬라이드로 되돌아가기
-    e.currentTarget.marginLeft = `-${imgNum * 100}%`;
   }
-  console.log(imgNum);
+  imgMove();
   mouseDrage = false;
 })
 imgWrap.addEventListener("mousemove", function(e){
@@ -62,8 +62,26 @@ imgWrap.addEventListener("mousemove", function(e){
     let drageGap = mouseDown - e.pageX;
     let drageGapPer = 100*(drageGap/imgList[0].clientWidth);
     let marginValue = (imgNum*100)+drageGapPer;
-    if(marginValue >= 0 && marginValue <= 500){
+    if(marginValue >= 0 && marginValue <= 400){
       e.currentTarget.style.marginLeft = `-${(imgNum*100)+drageGapPer}%`;
     }
   }
+})
+
+
+// 찜관련 이벤트
+const postInfo = contentWrap.querySelector(".postInfo");
+const saleBtn = postInfo.querySelector(".saleBtn");
+const saleBtnList = saleBtn.querySelectorAll("li");
+const loveBtn = saleBtnList[0].querySelector("a");
+let loveImg = "red"; // 찜 안했을 때 로드하면!!!
+loveBtn.addEventListener("click", (e)=>{
+  e.preventDefault();
+  if(loveImg == "red"){
+    loveImg = "redFill";
+  }
+  else {
+    loveImg = "red";
+  }         
+  e.currentTarget.style.backgroundImage = `url(./image/love_${loveImg}.png)`;
 })
