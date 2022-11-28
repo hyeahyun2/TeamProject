@@ -103,6 +103,22 @@ ul.sub_hj li {
   word-wrap:break-word;
 }
 
+#counsel_hj {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: #d461f7;
+  text-align: center;
+}
+
+#counsel_hj a {
+  line-height: 95px;
+  font-weight: bold;
+}
+
 @keyframes lightening {
   0% { box-shadow: 0px 0px 25px #35c9ff; }
   100% { box-shadow: 0px 0px 50px #35c9ff; }
