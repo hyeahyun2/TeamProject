@@ -5,6 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>신고하기</title>
+  <link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/report.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<script type="text/javascript" src="./js/jquery-3.6.1.js"></script>
+  <script type="text/javascript" src="./js/jquery-migrate-1.4.1.min.js"></script>
+  <script type="text/javascript" src="./js/jquery-ui.js"></script>
+	<script src="./js/common.js" defer></script>
+  <script src="./js/header.js" defer></script>
 </head>
 <body>
   <!-- header start -->
@@ -42,9 +51,12 @@
     </header>
   </div>
   <!-- header end -->
-  <section>
-    <form action="">
-      신고 ID: <input type="text" name="reportID_hj" size="200" id="">
+  <section id="reportWrap_hj">
+    <div id="headerWrap_hj">
+      <h2>신고하기</h2>
+    </div>
+    <form action="" id="formWrap_hj">
+      신고 ID: <input type="text" name="reportID_hj" size="20" id="">
       <select name="category_hj" id="">신고카테고리
         <option value="팝니다">팝니다</option>
         <option value="삽니다">삽니다</option>
@@ -52,12 +64,23 @@
         <option value="자유게시판">자유게시판</option>
         <option value="정보게시판">정보게시판</option>
       </select>
-      <input type="text" name="url_hj">
-      <textarea name="textarea_hj" id="" cols="100" rows="50"></textarea>
+       URL: <input type="text" name="url_hj">
+       <input type="submit" value="신고하기">
     </form>
-    <div id="btnWrap_hj">
-      <button class="goReport_hj">신고하기</button>
-    </div>
+    <ul id="blockList_hj">
+      <li>
+        <span>아이디1</span><span>닉네임1</span><a href="#" class="block on">-</a>
+      </li>
+      <li>
+        <span>아이디2</span><span>닉네임2</span><a href="#" class="block">-</a>
+      </li>
+      <li>
+        <span>아이디3</span><span>닉네임3</span><a href="#" class="block">-</a>
+      </li>
+      <li>
+        <span>아이디4</span><span>닉네임4</span><a href="#" class="block">-</a>
+      </li>
+    </ul>
   </section>
   <!-- footer start -->
   <div class="footerWrap page onePage6">

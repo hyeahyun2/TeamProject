@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body { 
+    background: #3f3f3f;
+}
+#upperSmallNav a {
+    color: #000;
+}
+div#headerWrap ul > li > a {
+    color: #000;
+}
+#reportWrap_hj { 
+    width: 100%;
+    max-width: 70%;
+    height: 100%;
+    position: relative;
+    top: 150px; 
+    margin: 0 auto;
+    padding-bottom: 25vh; 
+}
+#headerWrap_hj {
+    padding: 50px;
+    
+}
+#headerWrap_hj h2 {
+    font-size: 40px;
+    border-bottom: 2px solid #000;
+}
+#blockList_hj {
+    width: 500px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+#btnWrap_hj {
+    
+}
+
+#btnWrap_hj .goReport_hj {
+    
+}
