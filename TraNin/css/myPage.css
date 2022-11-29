@@ -100,7 +100,7 @@ div#headerWrap ul > li > a {
 #myPageMyInfo,#myPageMyActivity, #myPageFavorite, #myPageBuyList, #myPageMemberOut, #myPageMemberBanned, #myPageAdmin {
   display : none;
 }
-#myPageBuyList {
+#myPageMemberBanned {
   display : block;
 }
 #myPageMyInfoForm ul li {
@@ -223,3 +223,22 @@ div#headerWrap ul > li > a {
 #myPageBuyListPaging ul li {
   margin : 0 10px;
 }
+/* myPageMemberOut */
+#myPageMemberOut a {
+  color : white;
+}
+#myPageMemberOutInnerWrap {
+  text-align: center;
+}
+#myPageMemberOutBtn {
+  position: absolute;
+  display: block;
+  width : 100px;
+  height : 30px;
+  left : calc(50% - 50px);
+  bottom : 10px;
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid red;
+}
+/* myPageMemberBanned */
