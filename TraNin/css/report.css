@@ -22,19 +22,58 @@ div#headerWrap ul > li > a {
     
 }
 #headerWrap_hj h2 {
+    width: 14%;
     font-size: 40px;
     border-bottom: 2px solid #000;
 }
+
+#reportSub_hj {
+    padding-left: 50px;
+    height: 700px;
+}
+#formWrap_hj {
+    width: 70%;
+    padding: 25px;
+    margin-left: 25px;
+    background: #d1d1d1
+}
+#formWrap_hj span {
+    font-size: 18px;
+    font-weight: bold;
+}
+#formWrap_hj .submit {
+    width: 80px;
+    height: 25px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+}
 #blockList_hj {
-    width: 500px;
-    height: 100%;
+    margin: 25px 0 0 25px;
+    padding: 25px;
+    width: 70%;
+    height: 80%;
     border: 1px solid #000;
+    background: #fff;
 }
-
-#btnWrap_hj {
-    
+#blockList_hj li {
+    display: flex;
+    margin: 5px;
+    padding: 5px 0;
+    border: 1px solid #b6b5b5;
 }
-
-#btnWrap_hj .goReport_hj {
-    
+#blockList_hj li span {
+    display: block;
+    width: 45%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+#blockList_hj li .block {
+    /* margin-left: 50px; */
+    display: block;
+    width: 10%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
