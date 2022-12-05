@@ -5,14 +5,16 @@
 div#headerWrap ul > li > a {color: #000;}
 
 /* 메인영역 */
-
+#title_sh{
+    text-align: center;
+}
 body{
     width: 100%;
     height: 100vh;
 }
 #listWrap_sh{
     width: 1200px;
-    height: 180vh;
+    height: 155vh;
     margin: 25vh auto;
     border:1px solid black;
 }
@@ -22,7 +24,6 @@ body{
 #forms_sh li{
     width: 600px;
     height: 50px;
-    border:1px solid red;
     margin: 2vh auto;
     text-align: center;
 }
@@ -42,12 +43,14 @@ input[type="number"]{
     width: 120px;
     height: 40px;
 }
+input::placeholder{
+    color:black;
+}
 #sex{
     width: 400px;
     height: 50px;
     display:flex;
     margin: 0 auto;
-    border:1px solid purple;
     justify-content: space-evenly;
 }
 
@@ -60,4 +63,36 @@ input[type="number"]{
     width: 120px;
     height: 40px;
     background-color: pink;
+}
+#dblCheck1{
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    border: 1px solid grey;
+    margin: 0 auto;
+}
+#dblCheck2{
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    border: 1px solid grey;
+    margin: 0 auto;
+}
+#dblCheck3{
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    border: 1px solid grey;
+    margin: 0 auto;
+}
+#dblCheck4{
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    border: 1px solid grey;
+    margin: 0 auto;
 }

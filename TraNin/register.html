@@ -95,36 +95,37 @@
         </header>
     </div>
     <div id="listWrap_sh">
+        <h1 id="title_sh">회원가입</h1>
     <form id="list_sh" action="#">
         <ul id="forms_sh">
-        <li> <span>아이디</span> <input type="text" name="memberId"></li>
-        <span>인증하기</span>
-        <li> <span>비밀번호</span> <input type="password" name="password"></li>
-        <li> <span>비밀번호 확인</span> <input type="password" value="password_cf"></li>
-        <li> <span>이름</span> <input type="text" name="name"></li>
-        <li> <span>별명</span> <input type="text" name="nickName"></li>
-        <span><span>중복확인</span></span><br>
+        <li> <span> 아이디</span> <input type="text" name="memberId" placeholder=" 아이디"></li>
+        <span id="dblCheck1"> 인증하기</span>
+        <li> <span> 비밀번호</span> <input type="password" name="password" placeholder=" 비밀번호"></li>
+        <li> <span> 비밀번호 확인</span> <input type="password" value="password_cf"  placeholder=" 비밀번호 확인"></li>
+        <li> <span> 이름</span> <input type="text" name="name"  placeholder=" 이름"></li>
+        <li> <span> 별명</span> <input type="text" name="nickName"  placeholder=" 별명"></li>
+        <span><span id="dblCheck2">별명 중복확인</span></span><br>
         <span id="sex">
-        <p><input id="man" type="button" value="남성" name="male"></p>
+        <p><input id="man" type="button" value="남성" name="male" ></p>
         <p><input id="woman"type="button" value="여성" name="woman"></p>
         </span>
-        <li> <span>생년월일</span> <input type="number" name="birthYear"> 
-            <input type="number" name="birthMonth"> 
-            <input type="number" name="birthDay">
+        <li> <span> 생년월일</span> <input type="number" name="birthYear"  placeholder=" 태어난 년"> 
+            <input type="number" name="birthMonth"  placeholder=" 태어난 월"> 
+            <input type="number" name="birthDay"  placeholder=" 태어난 일">
         </li>
-        <li> <span>휴대전화</span> <input type="number" name="phone1"> -
-            <input type="number" name="phone2"> -
-            <input type="number" name="phone3"> 
+        <li> <span> 휴대전화</span> <input type="number" name="phone1"  placeholder=" 010"> -
+            <input type="number" name="phone2"  placeholder=" 1234"> -
+            <input type="number" name="phone3" placeholder=" 5678"> 
         </li>
-        <li> <span>집전화</span> <input type="number" name="phone4"> -
-            <input type="number" name="phone5"> -
-            <input type="number" name="phone6"> 
+        <li> <span> 집전화</span> <input type="number" name="phone4"  placeholder=" 02"> -
+            <input type="number" name="phone5"  placeholder=" 123"> -
+            <input type="number" name="phone6"  placeholder=" 4567"> 
         </li>
-        <li><span>우편번호</span> <input id="zipcode" type="text" name="zipCode" readonly></li>
-        <span onclick="execDaumPostcode()" style="cursor:pointer;" > 우편번호 검색</span> <br>
-            <li><span>집 주소1</span> <input id="address01" type="text" name="address1"></li>
-            <li><span>집 주소2</span> <input id="address02" type="text" name="address2"></li>
-        <input type="submit" value="회원가입">
+        <li><span>우편번호</span> <input id="zipcode" type="text" name="zipCode" readonly  placeholder=" 우편번호"></li>
+        <span id="dblCheck3" onclick="execDaumPostcode()" style="cursor:pointer;" > 우편번호 검색</span> <br>
+            <li><span>집 주소1</span> <input id="address01" type="text" name="address1"  placeholder=" 주소"></li>
+            <li><span>집 주소2</span> <input id="address02" type="text" name="address2" placeholder=" 상세주소"></li>
+        <input id="dblCheck4" type="submit" value="회원가입">
     </ul>
     </form>
 </div>
