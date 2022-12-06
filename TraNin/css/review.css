@@ -30,19 +30,39 @@ div#headerWrap ul > li > a {
 #bestPosts {
   width: 100%; height: 300px;
   margin: 20px 0;
-  border: 1px solid #000;
+  background-color: #fffca4;
 }
 #bestPosts h3 {
-  margin: 20px;
+  padding: 20px;
 }
 #bestPosts ul {
   display: flex;
   justify-content: space-around;
   width: 100%; height: 200px;
 }
-#bestPosts ul li {
+#bestPosts .bestList {
+  position: relative;
   width: 30%; height: 100%;
+  /* border: 1px solid #000; */
+  background-color: #fff;
+}
+/* .bestList::after {
+  content: "1";
+} */
+.bestList .postImg {
+  position: absolute; top: 0; left: 0;
+  display: block;
+  width: 100%; height: 100%;
   border: 1px solid #000;
+}
+.bestList dl {
+  border: 1px solid #f00;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.bestList dl dt {
+  font-size: 20px;
 }
 
 /* 카테고리 & 정렬 순서 선택 */
@@ -82,7 +102,7 @@ div#headerWrap ul > li > a {
 }
 #category {
   position: absolute;
-  right: 270px;
+  right: 150px;
   height: 25px;
   overflow: hidden;
   transition: 0.5s;
@@ -163,6 +183,22 @@ div#headerWrap ul > li > a {
   display: block;
   width: 120px; height: 120px;
   border: 1px solid #a7a7a7;
+}
+/* 페이징 버튼 */
+#pagingWrap {
+}
+#pagingWrap .pagingUl {
+  margin: 50px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#pagingWrap .pagingUl li a {
+  display: block;
+  border: 3px solid #fffca4;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 /* 글쓰기 + top 버튼 */

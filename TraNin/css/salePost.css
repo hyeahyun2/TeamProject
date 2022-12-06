@@ -137,18 +137,23 @@ div#headerWrap ul > li > a {
 }
 .postInfo .saleBtn li:nth-of-type(4) a {}
 
-/* 판매자 메뉴 버튼 */
-#sellerBtn {
+/* 판매자 / 구매자 메뉴 버튼 */
+.postBtn {
   display: flex;
   justify-content: center;
 }
-#sellerBtn li {
+.postBtn li {
   padding: 0 20px;
 }
-#sellerBtn li:not(:last-of-type) {
+.postBtn li:not(:last-of-type) {
   border-right: 1px solid #000;
 }
-
+#sellerBtn { /* 글쓴이일 때 노출 */
+  /* display: none; */
+}
+#buyerBtn { /* 글쓴이가 아닐 때 노출 */
+  display: none;
+}
 /* 페이지 이동 버튼 */
 #PageBtn * {
   position: fixed;
