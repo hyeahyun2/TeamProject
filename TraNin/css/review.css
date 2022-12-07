@@ -56,13 +56,20 @@ div#headerWrap ul > li > a {
   border: 1px solid #000;
 }
 .bestList dl {
-  border: 1px solid #f00;
   position: absolute;
   width: 100%;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 5px;
 }
 .bestList dl dt {
-  font-size: 20px;
+  font-size: 16px;
+  width: 100%;
+}
+.bestList dl dd {
+  font-size: 12px;
 }
 
 /* 카테고리 & 정렬 순서 선택 */
@@ -157,27 +164,26 @@ div#headerWrap ul > li > a {
 #posts {
   height: 800px;
   width: 100%; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid #a7a7a7;
   border-top: 1px solid #a7a7a7;
 }
-#posts > li {
+#posts thead {
+  border: 1px solid #000;
+}
+#posts tbody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#posts tbody tr {
+  border: 1px solid #000;
   width: 100%;
   padding: 10px 20px;
   display: flex;
   gap: 20px;
   position: relative;
-}
-#posts > li:not(:last-of-type):after {
-  content: "";
-  background-color: #a7a7a7;
-  width: 100%; height: 1px;
-  position: absolute;
-  bottom: -12px; left: 0;
-  margin: 0 10px;
 }
 #posts .postImg {
   display: block;
