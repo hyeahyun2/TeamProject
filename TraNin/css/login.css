@@ -3,9 +3,18 @@
 #upperSmallNav a {color: #000;}
 div#headerWrap ul > li > a {color: #000;}
 
+#logo_sh{
+  width:250px;
+  height: 200px;
+  background-image: url(../image/mainLogo.png);
+  background-size: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
 /* 로그인 */
 
-#check_sh{
+.check_sh{
   color:red;
   text-align: center;
 }
@@ -18,7 +27,6 @@ div#headerWrap ul > li > a {color: #000;}
     width: 800px;
     height: 80vh;
     margin: 0 auto;
-    padding-top:190px
 }
 #login_sh h1{
   text-align: center;

@@ -14,17 +14,52 @@
     <script src="./js/register.js" defer></script>
 </head>
 <body>
+    <div id="upperSmallNav">
+        <h1 class="hidden">기타관련</h1>
+        <a href="login.html">로그인</a>
+        <a href="#">회원가입</a>
+        <a href="myPage.html">마이페이지</a>
+    </div>
+    <div id="headerWrap">
+        <header id="header">
+            <h1 class="logo"><a href="./index.html">logo</a></h1>
+            <nav id="gnb">
+                <h2 class="hidden">주요이용메뉴</h2>
+                <ul id="gnbList">
+                    <li class="gnbListChild"><a href="./sale.html">팝니다</a></li>
+                    <li class="gnbListChild"><a href="#">삽니다</a></li>
+                    <li class="gnbListChild"><a href="#">커뮤니티</a>
+                        <ul class="snb">
+                            <li><a href="#">후기</a></li>
+                            <li><a href="#">인기글</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">정보게시판</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnbListChild"><a href="#">고객센터</a>
+                        <ul class="snb">
+                            <li><a href="./notice.html">공지사항</a></li>
+                            <li><a href="./FAQ.html">FAQ</a></li>
+                            <li><a href="#">신고하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <div id="listWrap_sh">
-        <div id="check_sh"></div>
         <h1 id="title_sh">회원가입</h1>
     <form name ="member_insert" id="list_sh" action="#">
         <ul id="forms_sh">
         <li> <span> 아이디</span> <input type="text" name="memberId" placeholder=" 아이디" id="id_sh"></li>
+        <li><div class="check_sh check1"></div></li>
         <span id="dblCheck1"> 인증하기</span>
         <li> <span> 비밀번호</span> <input type="password" name="password" placeholder=" 비밀번호" id="password_sh"></li>
-        <li> <span> 비밀번호 확인</span> <input type="password" name="password_cf" id="password_cf" placeholder=" 비밀번호 확인"></li>
+        <li> <span> 비밀번호 확인</span> <input type="password" value="password_cf" id="password_cf" placeholder=" 비밀번호 확인"></li>
         <li> <span> 이름</span> <input type="text" name="name"  placeholder=" 이름" id="name"></li>
+        <li><div class="check_sh check4"></div></li>
         <li> <span> 별명</span> <input type="text" name="nickName" id="nickName" placeholder=" 별명"></li>
+        <li><div class="check_sh check5"></div></li>
         <span><span id="dblCheck2">별명 중복확인</span></span><br>
         <li id="sex">
             <p id="man"><input type="radio" value="man" name="sex" checked><span>남성</span></p>
@@ -34,25 +69,22 @@
             <input type="number" name="birthMonth"  placeholder=" 태어난 월" min="01" max="12"> 
             <input type="number" name="birthDay"  placeholder=" 태어난 일" min="01" max="31">
         </li>
+        <li><div class="check_sh check6"></div></li>
         <li> <span> 휴대전화</span> 
             <select name="phoneCompany" id="phoneCompany">
                 <option value="skt">skt</option>
                 <option value="kt">kt</option>
                 <option value="LGU+">LGU+</option>
             </select>
-            <input type="number" name="phone1"  placeholder=" 010"> -
-            <input type="number" name="phone2"  placeholder=" 1234"> -
-            <input type="number" name="phone3" placeholder=" 5678"> 
+            <input type="text" name="phone"  placeholder=" 010-1234-1234">
         </li>
-        <li> <span> 집전화</span> <input type="number" name="phone4"  placeholder=" 02"> -
-            <input type="number" name="phone5"  placeholder=" 123"> -
-            <input type="number" name="phone6"  placeholder=" 4567"> 
+        <li> <span> 집전화</span> <input type="text" name="phone2"  placeholder=" 02-123-1234"> -
         </li>
         <li><span>우편번호</span> <input id="zipcode" type="text" name="zipCode" readonly  placeholder=" 우편번호"></li>
-        <input type="button" id="dblCheck3" name="dblCheck3" style="cursor:pointer" value="우편번호 검색" > <br>
-            <li><span>집 주소1</span> <input id="address01" type="text" name="address01"  placeholder=" 주소" readonly></li>
-            <li><span>집 주소2</span> <input id="address02" type="text" name="address02" placeholder=" 상세주소"></li>
-        <input id="dblCheck4" type="button" name="dblCheck4" value="회원가입">
+        <span id="dblCheck3" style="cursor:pointer" > 우편번호 검색</span> <br>
+            <li><span>집 주소1</span> <input id="address01" type="text" name="address1"  placeholder=" 주소"></li>
+            <li><span>집 주소2</span> <input id="address02" type="text" name="address2" placeholder=" 상세주소"></li>
+        <input id="dblCheck4" type="submit" value="회원가입">
     </ul>
     </form>
 </div>
