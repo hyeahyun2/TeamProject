@@ -100,7 +100,7 @@ div#headerWrap ul > li > a {
 #myPageMyInfo,#myPageMyActivity, #myPageFavorite, #myPageBuyList, #myPageMemberOut, #myPageMemberBanned, #myPageAdmin {
   display : none;
 }
-#myPageMemberBanned {
+#myPageAdmin {
   display : block;
 }
 #myPageMyInfoForm ul li {
@@ -242,3 +242,90 @@ div#headerWrap ul > li > a {
   border: 2px solid red;
 }
 /* myPageMemberBanned */
+#myPageMemberBanned a {
+  color : white;
+}
+#myPageMemberBanned {
+  text-align: center;
+}
+#myPageMemberBannedPaging {
+  display : flex;
+  justify-content: center;
+  margin : 10px;
+}
+#myPageMemberBannedPaging ul {
+  display : flex;
+  flex-flow: row;
+  margin : 0 10px;
+}
+#myPageMemberBannedPaging ul li {
+  margin : 0 10px;
+}
+#myPageMemberBannedListInnerWrap {
+  display : flex;
+  flex-flow: column;
+}
+#myPageMemberBannedListInnerWrap ul {
+  display : flex;
+  flex-flow: column;
+  width : 100%;
+  height : 100%;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+#myPageMemberBannedListHeader {
+  font-size: 1.3em;
+  padding-bottom: 20px;
+}
+#myPageMemberBannedListInnerWrap li:not(#myPageBuyListHeader) {
+  padding-top: 20px;
+}
+#myPageMemberBannedListInnerWrap li:not(#myPageBuyListHeader) {
+  transition: background 0.25s ease;
+}
+#myPageMemberBannedListInnerWrap li:not(#myPageBuyListHeader):hover {
+  background: #014055;
+}
+#myPageMemberBannedListInnerWrap li {
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+#myPageMemberBannedListInnerWrap a {
+  margin-right : 100px;
+}
+#myPageMemberBannedListHeader a {
+  margin: 40px;
+}
+#myPageMemberBannedBox {
+  border : 2px solid white;
+}
+/* admin */
+#myPageAdminInnerTab section {
+  display : none;
+}
+#myPageAdminInnerTab section.active {
+  display : block;
+}
+#myPageAdminNav ul li a{
+  color : white
+}
+#myPageAdminNav ul li.active a {
+  color : red;
+}
+#myPageAdminInnerTab section div {
+  display : flex;
+  flex-flow: column;
+  border: 1px solid white;
+}
+#myPageAdminInnerTab section div ul {
+  display : flex;
+  flex-flow: row;
+  justify-content:space-around;
+  border-bottom: 1px solid white;
+}
+#myPageAdminInnerTab a {
+  color : white;
+  display : block;
+  border : 1px solid white;
+  text-align: center;
+}

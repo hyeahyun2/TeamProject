@@ -7,6 +7,9 @@ const myPageMyActivityLeftNavLi = document.querySelectorAll("#myPageMyActivityLe
 const myPageTab = document.querySelectorAll("#myPageTab li");
 const myPageFavoriteUl = document.querySelector("#myPageFavorite ul");
 const myPageMemberOutBtn = document.querySelector("#myPageMemberOutBtn");
+const myPageMemberBannedListBtns = document.querySelectorAll("#myPageMemberBannedList input");
+const myPageAdminInnerTab = document.querySelectorAll("#myPageAdminInnerTab section");
+const myPageAdminNav = document.querySelectorAll("#myPageAdminNav ul li");
 
 myPageProfileNickName.addEventListener('focusout',function(){
   //ajax myPageProfileNickName 바꾸기
@@ -54,3 +57,25 @@ myPageMemberOutBtn.addEventListener('click',function(){
     console.log("아무일없었다");
   }
 });
+//밴리스트 차단버튼 클릭시
+for(let i=0;i<myPageMemberBannedListBtns.length;i++){
+  myPageMemberBannedListBtns[i].addEventListener('click',function(e){
+    let isExecuted = confirm("정말 차단 해제하시겠습니까?");
+    console.log(isExecuted+" / "+e.target.value);//선택은?
+  });
+}
+//관리자 페이지 탭
+for(let i=0;i<myPageAdminNav.length;i++){
+  console.log(i);
+  myPageAdminNav[i].addEventListener('click',function(){
+    for(let j=0;j<myPageAdminNav.length;j++){
+      myPageAdminNav[j].classList.remove("active");
+    }
+    myPageAdminNav[i].classList.add("active");
+
+    for(let j=0;j<myPageAdminInnerTab.length;j++){
+      myPageAdminInnerTab[j].classList.remove("active");
+    }
+    myPageAdminInnerTab[i].classList.add("active");
+  });
+}
