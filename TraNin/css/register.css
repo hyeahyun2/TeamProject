@@ -5,6 +5,10 @@
 div#headerWrap ul > li > a {color: #000;}
 
 /* 메인영역 */
+#check_sh{
+    color:red;
+    text-align: center;
+  }
 #title_sh{
     text-align: center;
   color:gray;
@@ -41,6 +45,11 @@ input[type="text"]{
 input[type="password"]{
     width: 300px;
     height: 50px;
+    box-shadow: 5px 5px pink;
+}
+#phoneCompany{
+    width: 120px;
+    height: 40px;
     box-shadow: 5px 5px pink;
 }
 input[type="number"]{
