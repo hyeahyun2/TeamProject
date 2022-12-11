@@ -78,7 +78,7 @@ input.phone {
 }
 input::placeholder{
     font-size: 12px;
-    color:black;
+    color:lightgray;
 }
 #sex{
     width: 400px;
