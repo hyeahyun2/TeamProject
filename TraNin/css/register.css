@@ -15,8 +15,11 @@ div#headerWrap ul > li > a {color: #000;}
 
 /* 메인영역 */
 .check_sh{
+    width: 500px;
+    height: 10px;
     color:red;
     text-align: center;
+    margin: 0 auto;
   }
 #title_sh{
     text-align: center;
@@ -29,7 +32,7 @@ body{
 }
 #listWrap_sh{
     width: 1200px;
-    height: 155vh;
+    height: 170vh;
     margin: 0 auto;
 }
 #list_sh{
@@ -55,6 +58,12 @@ input[type="text"]{
 input[type="password"]{
     width: 300px;
     height: 50px;
+    box-shadow: 5px 5px pink;
+    padding: 0px 10px;
+}
+#phoneCompany{
+    width: 120px;
+    height: 40px;
     box-shadow: 5px 5px pink;
     padding: 0 10px;
 }
@@ -113,6 +122,14 @@ input::placeholder{
     margin: 0 auto;
 }
 #dblCheck2{
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    border: 1px solid grey;
+    margin: 0 auto;
+}
+#dblCheck22{
     display: block;
     text-align: center;
     width: 100px;
