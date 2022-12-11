@@ -7,6 +7,7 @@ div#headerWrap ul > li > a {color: #000;}
 
 #check_sh{
   color:red;
+  text-align: center;
 }
 
 #loginWrap_sh{

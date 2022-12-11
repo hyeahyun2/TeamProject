@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/register.css">
     <script src="./js/header.js" defer></script>
-</head>
-<script src="https://spi.maps.daum.net/imap/map_js_init/postcode.v2.js"></script>
+    <script src="./js/register.js" defer></script>
     <script>
+        document.addEventListener('DOMContentLoaded',function(){
+ /          *주소API걸기 */
         /* 
         카카오 우편번호 검색 가이드 페이지 :  https://postcode.map.daum.net/guide
         getElementById() : html 에서 매개변수로 받은 id 값이 있는 요소를 반환.
@@ -59,7 +60,15 @@
                 }
             }).open();
         }
-    </script> 
+        })
+
+        const hey = document.querySelector("#dblCheck3");
+        hey.addEventListener('click',execDaumPostcode);
+
+
+    </script>
+   
+</head>
 <body>
     <div id="upperSmallNav">
         <h1 class="hidden">기타관련</h1>
@@ -95,25 +104,32 @@
         </header>
     </div>
     <div id="listWrap_sh">
+        <div id="check_sh"></div>
         <h1 id="title_sh">회원가입</h1>
-    <form id="list_sh" action="#">
+    <form name ="member_insert" id="list_sh" action="#">
         <ul id="forms_sh">
-        <li> <span> 아이디</span> <input type="text" name="memberId" placeholder=" 아이디"></li>
+        <li> <span> 아이디</span> <input type="text" name="memberId" placeholder=" 아이디" id="id_sh"></li>
         <span id="dblCheck1"> 인증하기</span>
-        <li> <span> 비밀번호</span> <input type="password" name="password" placeholder=" 비밀번호"></li>
-        <li> <span> 비밀번호 확인</span> <input type="password" value="password_cf"  placeholder=" 비밀번호 확인"></li>
-        <li> <span> 이름</span> <input type="text" name="name"  placeholder=" 이름"></li>
-        <li> <span> 별명</span> <input type="text" name="nickName"  placeholder=" 별명"></li>
+        <li> <span> 비밀번호</span> <input type="password" name="password" placeholder=" 비밀번호" id="password_sh"></li>
+        <li> <span> 비밀번호 확인</span> <input type="password" value="password_cf" id="password_cf" placeholder=" 비밀번호 확인"></li>
+        <li> <span> 이름</span> <input type="text" name="name"  placeholder=" 이름" id="name"></li>
+        <li> <span> 별명</span> <input type="text" name="nickName" id="nickName" placeholder=" 별명"></li>
         <span><span id="dblCheck2">별명 중복확인</span></span><br>
         <span id="sex">
         <p><input id="man" type="button" value="남성" name="male" ></p>
         <p><input id="woman"type="button" value="여성" name="woman"></p>
         </span>
-        <li> <span> 생년월일</span> <input type="number" name="birthYear"  placeholder=" 태어난 년"> 
-            <input type="number" name="birthMonth"  placeholder=" 태어난 월"> 
-            <input type="number" name="birthDay"  placeholder=" 태어난 일">
+        <li> <span> 생년월일</span> <input type="number" name="birthYear"  placeholder=" 태어난 년" min="1960" max="2022"> 
+            <input type="number" name="birthMonth"  placeholder=" 태어난 월" min="01" max="12"> 
+            <input type="number" name="birthDay"  placeholder=" 태어난 일" min="01" max="31">
         </li>
-        <li> <span> 휴대전화</span> <input type="number" name="phone1"  placeholder=" 010"> -
+        <li> <span> 휴대전화</span> 
+            <select name="phoneCompany" id="phoneCompany">
+                <option value="skt">skt</option>
+                <option value="kt">kt</option>
+                <option value="LGU+">LGU+</option>
+            </select>
+            <input type="number" name="phone1"  placeholder=" 010"> -
             <input type="number" name="phone2"  placeholder=" 1234"> -
             <input type="number" name="phone3" placeholder=" 5678"> 
         </li>
@@ -122,7 +138,7 @@
             <input type="number" name="phone6"  placeholder=" 4567"> 
         </li>
         <li><span>우편번호</span> <input id="zipcode" type="text" name="zipCode" readonly  placeholder=" 우편번호"></li>
-        <span id="dblCheck3" onclick="execDaumPostcode()" style="cursor:pointer;" > 우편번호 검색</span> <br>
+        <span id="dblCheck3" style="cursor:pointer" > 우편번호 검색</span> <br>
             <li><span>집 주소1</span> <input id="address01" type="text" name="address1"  placeholder=" 주소"></li>
             <li><span>집 주소2</span> <input id="address02" type="text" name="address2" placeholder=" 상세주소"></li>
         <input id="dblCheck4" type="submit" value="회원가입">
