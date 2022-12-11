@@ -174,49 +174,132 @@ nickName.addEventListener('input', function () {
 })
 
 // 1.필수 항목 검사.
-function checkForm(e) {
+// function checkForm(e) {
+//     e.preventDefault();
+
+//     if (id_sh === "") {
+//         alert("아이디를 입력해 주세요!")
+//         form.memberId.focus();
+//         return false;
+//     } else if (password_sh === "") {
+//         alert("비밀번호를 입력해 주세요!")
+//         form.password.focus();
+//         return false;
+//     } else if (password_cf_sh === "") {
+//         alert("비밀번호 확인을 진행해 주세요!")
+//         form.password_cf.focus();
+//         return false;
+//     } else if (name_sh === "") {
+//         alert("이름을 입력해 주세요!")
+//         form.name.focus();
+//         return false;
+//     } else if (nickName === "") {
+//         alert("별명을 입력해 주세요!")
+//         form.nickName.focus();
+//         return false;
+//     } else if (!regExpId.test(id_sh) || (id_sh.length < 4 || id_sh.length > 30)) {
+//         alert("아이디가 유효하지 않습니다.")
+//         form.memberId.focus();
+//         return false;
+//     } else if (!regExppassword.test(password_sh) || (password_sh.length < 8 || password_sh.length > 20)) {
+//         alert("비밀번호가 유효하지 않습니다.")
+//         form.password.focus();
+//         return false;
+//     } else if (password_sh != password_cf_sh) {
+//         alert("비밀번호가 일치하지 않습니다!")
+//         form.password.focus();
+//         return false;
+//     } else if (!regExpName.test(name_sh) || (name_sh.length < 2 || name_sh.length > 20)) {
+//         alert("이름이 유효하지 않습니다.")
+//         form.name.focus();
+//         return false;
+//     }
+//     form.submit();
+// }
+
+// const dblCheck4 = form.dblCheck4;
+
+// dblCheck4.addEventListener("click", checkForm)
+
+
+
+$('form').submit(function(e){
     e.preventDefault();
 
-    if (id_sh === "") {
-        alert("아이디를 입력해 주세요!")
-        form.memberId.focus();
-        return false;
-    } else if (password_sh === "") {
-        alert("비밀번호를 입력해 주세요!")
-        form.password.focus();
-        return false;
-    } else if (password_cf_sh === "") {
-        alert("비밀번호 확인을 진행해 주세요!")
-        form.password_cf.focus();
-        return false;
-    } else if (name_sh === "") {
-        alert("이름을 입력해 주세요!")
-        form.name.focus();
-        return false;
-    } else if (nickName === "") {
-        alert("별명을 입력해 주세요!")
-        form.nickName.focus();
-        return false;
-    } else if (!regExpId.test(id_sh) || (id_sh.length < 4 || id_sh.length > 30)) {
-        alert("아이디가 유효하지 않습니다.")
-        form.memberId.focus();
-        return false;
-    } else if (!regExppassword.test(password_sh) || (password_sh.length < 8 || password_sh.length > 20)) {
-        alert("비밀번호가 유효하지 않습니다.")
-        form.password.focus();
-        return false;
-    } else if (password_sh != password_cf_sh) {
-        alert("비밀번호가 일치하지 않습니다!")
-        form.password.focus();
-        return false;
-    } else if (!regExpName.test(name_sh) || (name_sh.length < 2 || name_sh.length > 20)) {
-        alert("이름이 유효하지 않습니다.")
-        form.name.focus();
-        return false;
-    }
-    form.submit();
-}
+   
+        let id_sh = form.memberId.value;
+        if (id_sh == "") {
+            check1.innerText = "아이디를 입력해주세요";
+            id.focus();
+            return false;
 
-const dblCheck4 = form.dblCheck4;
+        }
+        if (!regExpId.test(id_sh)) {
+            check1.innerText = "아이디는 이메일 형식이여야 합니다.";
+            id.focus();
+            return false;
+        } 
+    
+    
+    
 
-dblCheck4.addEventListener("click", checkForm)
+        let passwd_sh = form.password.value;
+        if (passwd_sh == "") {
+            check2.innerText = "비밀번호를 입력해주세요";
+            password.focus();
+            return false;
+        }
+        if (!regExppassword.test(passwd_sh)) {
+            check2.innerText = "비밀번호는 특수기호, 영문, 숫자 포함 8자리 이상이여야 합니다.";
+            password.focus();
+            return false;
+        } 
+    
+
+    
+
+        let password_sh = form.password.value;
+        let password_cf_sh = form.password_cf.value;
+        if (password_sh == password_cf_sh) {
+            check3.innerText = "비밀번호가 일치합니다!";
+        } else {
+            check3.innerText = "비밀번호가 일치하지 않습니다!";
+            password_cf.focus();
+            return false;
+        }
+
+    
+
+        let name_sh = form.name.value;
+        if (name_sh == "") {
+            check4.innerText = "이름을 입력해주세요";
+            name.focus();
+            return false;
+        }
+        if (!regExpName.test(name_sh)) {
+            check4.innerText = "이름은 한글로만 지정 가능합니다.";
+            name.focus();
+            return false;
+        } 
+    
+
+
+        let nickName_sh = form.name.value;
+        if (nickName_sh == "") {
+            check5.innerText = "별명을 입력해주세요";
+            nickName.focus();
+            return false;
+        }
+        if (!regExpName.test(nickName_sh)) {
+            check5.innerText = "별명은 한글,영문, 숫자로만 가능합니다..";
+            nickName.focus();
+            return false;
+        } 
+        
+    
+    $(this).unbind('submit').submit();
+
+
+
+
+})
