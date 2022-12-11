@@ -31,7 +31,7 @@ body{
     height: 100vh;
 }
 #listWrap_sh{
-    width: 1200px;
+    max-width: 1200px;
     height: 170vh;
     margin: 0 auto;
 }
