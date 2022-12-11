@@ -4,7 +4,20 @@
 #upperSmallNav a {color: #000;}
 div#headerWrap ul > li > a {color: #000;}
 
+#logo_sh{
+    width:250px;
+    height: 200px;
+    background-image: url(../image/mainLogo.png);
+    background-size: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
 /* 메인영역 */
+.check_sh{
+    color:red;
+    text-align: center;
+  }
 #title_sh{
     text-align: center;
   color:gray;
@@ -17,7 +30,7 @@ body{
 #listWrap_sh{
     width: 1200px;
     height: 155vh;
-    margin: 27vh auto;
+    margin: 0 auto;
 }
 #list_sh{
 
@@ -25,7 +38,7 @@ body{
 #forms_sh li{
     width: 600px;
     height: 50px;
-    margin: 2vh auto;
+    margin: 0 auto;
     text-align: center;
 }
 #forms_sh li span{
@@ -37,19 +50,25 @@ input[type="text"]{
     width: 300px;
     height: 50px;
     box-shadow: 5px 5px pink;
+    padding: 0 10px;
 }
 input[type="password"]{
     width: 300px;
     height: 50px;
     box-shadow: 5px 5px pink;
+    padding: 0 10px;
 }
 input[type="number"]{
     width: 120px;
     height: 40px;
     box-shadow: 5px 5px pink;
+    padding: 0 10px;
+}
+input.phone {
+	width: 300px;
 }
 input::placeholder{
-    font-size: 18px;
+    font-size: 12px;
     color:black;
 }
 #sex{
@@ -57,18 +76,33 @@ input::placeholder{
     height: 50px;
     display:flex;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
 }
-
-#man{
-    width: 120px;
+#sex p {
+	width: 120px;
     height: 40px;
-    background-color: lightblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+#sex input[type="radio"] {
+	vertical-align: middle;
+	appearance: none;
+	position: absolute;
+	top: 0; left: 0;
+}
+#sex > p > span {
+	text-indent: 0;
+}
+#man{
+    background-color: rgb(128, 199, 223);
 }
 #woman{
-    width: 120px;
-    height: 40px;
-    background-color: pink;
+    background-color: rgb(255, 224, 229);
 }
 #dblCheck1{
     display: block;
