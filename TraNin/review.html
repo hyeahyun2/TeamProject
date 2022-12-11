@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/review.css">
   <script src="./js/header.js" defer></script>
+  <script src="./js/review.js" defer></script>
 </head>
 <body>
   <!-- header -->
@@ -95,9 +96,9 @@
           <ul class="goryList">
             <li>전체</li>
             <li>스위치</li>
-            <li>구형모델</li>
+            <li>타이틀</li>
+            <!-- <li>구형모델</li> -->
             <li>액세서리</li>
-            <li>게임팩</li>
           </ul>
         </div>
         <ul id="array">
@@ -106,65 +107,17 @@
         </ul>
       </div>
       <table id="posts">
-        <!-- <li>
-          <a href="#" class="postImg">후기글 사진</a>
-          <dl>
-            <dt><a href="#" class="postTitle">[카테고리][상품명]제목1</a></dt>
-            <dd class="writer">별명1</dd>
-            <dd class="hits_date"><span class="hits">조회수</span><span class="writeDate">작성날짜</span></dd>
-            <dd>좋아요수</dd>
-          </dl>
-        </li> -->
         <thead>
           <tr>
-            <th scope="col">글번호</th>
-            <th scope="col">제목</th>
-            <th scope="col">별명</th>
-            <th scope="col">조회수</th>
-            <th scope="col">좋아요수</th>
+            <th>글번호</th>
+            <th colspan="2">제목</th>
+            <th>별명</th>
+            <th>조회수</th>
+            <th>좋아요</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th>5</th>
-            <td><a href="#" class="postImg">후기글 사진</a></td>
-            <td>[카테고리][상품명]제목1</td>
-            <td>별명1</td>
-            <td>조회수</td>
-            <td>좋아요수</td>
-          </tr>
-          <tr>
-            <th>4</th>
-            <td><a href="#" class="postImg">후기글 사진</a></td>
-            <td>[카테고리][상품명]제목1</td>
-            <td>별명1</td>
-            <td>조회수</td>
-            <td>좋아요수</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td><a href="#" class="postImg">후기글 사진</a></td>
-            <td>[카테고리][상품명]제목1</td>
-            <td>별명1</td>
-            <td>조회수</td>
-            <td>좋아요수</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td><a href="#" class="postImg">후기글 사진</a></td>
-            <td>[카테고리][상품명]제목1</td>
-            <td>별명1</td>
-            <td>조회수</td>
-            <td>좋아요수</td>
-          </tr>
-          <tr>
-            <th>1</th>
-            <td><a href="#" class="postImg">후기글 사진</a></td>
-            <td>[카테고리][상품명]제목1</td>
-            <td>별명1</td>
-            <td>조회수</td>
-            <td>좋아요수</td>
-          </tr>
+          <!-- 게시글 리스트 -->
         </tbody>
       </table>
     </div>
