@@ -46,26 +46,6 @@ hey.addEventListener('click', function(){
     }).open();
 });
 
-// 성별 선택
-const sexMan = document.getElementById("man");
-const manInput = sexMan.querySelector("input");
-const sexWoman = document.getElementById("woman");
-const womanInput = sexWoman.querySelector("input");
-
-sexWoman.addEventListener("click", (e)=>{ // 여자 선택
-	manInput.removeAttribute("checked");
-	womanInput.setAttribute("checked", "checked");
-	e.currentTarget.style.backgroundColor = "rgb(238, 123, 142)";
-	sexMan.style.backgroundColor = "rgb(214, 245, 255)";
-})
-sexMan.addEventListener("click", (e)=>{ // 남자 선택
-	womanInput.removeAttribute("checked");
-	manInput.setAttribute("checked", "checked");
-	e.currentTarget.style.backgroundColor = "rgb(128, 199, 223)";
-	sexWoman.style.backgroundColor = "rgb(255, 224, 229)";
-})
-
-
 
 // 2. 유효성 검사.
 const id = document.querySelector('#id_sh');
@@ -138,23 +118,6 @@ password_cf.addEventListener('input', function () {
     }
 })
 
-name.addEventListener('input', function () {
-    let name_sh = form.name.value;
-    if (name_sh == "") {
-        check4.innerText = "";
-    }
-    if (!regExpName.test(name_sh)) {
-        check4.innerText = "이름은 한글로만 지정 가능합니다.";
-    } else {
-        check4.innerText = ""
-        if ((name_sh.length < 2 || name_sh.length > 20)) {
-            check4.innerText = "이름은 2자리 이상, 20자리 이하만 가능합니다.";
-        } else {
-            check4.innerText = "";
-        }
-    }
-
-})
 nickName.addEventListener('input', function () {
     let nickName_sh = form.name.value;
     if (nickName_sh == "") {
